@@ -121,12 +121,18 @@ body {
 }
 
 .news-card {
+    height: 100%;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .news-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 24px rgba(18, 52, 107, 0.1) !important;
+    box-shadow: 0 10px 24px rgba(18, 52, 107, 0.12) !important;
+}
+
+.news-card .card-body {
+    display: flex;
+    flex-direction: column;
 }
 
 .news-card .card-title {
@@ -144,15 +150,13 @@ body {
     object-fit: cover;
 }
 
-.news-status .bi-newspaper {
+.news-image-placeholder {
     color: var(--primary-light);
-    font-size: 2.5rem;
 }
 
-.news-link {
-    color: var(--primary-dark);
-    font-weight: 700;
-    text-decoration: none;
+.news-read-more {
+    margin-top: auto;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 @media (max-width: 575.98px) {

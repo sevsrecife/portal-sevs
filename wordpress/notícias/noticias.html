@@ -53,21 +53,6 @@
                 <p class="text-muted mb-0">Publicações oficiais da Vigilância em Saúde do Recife.</p>
             </div>
 
-            <div id="noticias-carregando" class="news-status text-center py-5" role="status" aria-live="polite">
-                <div class="spinner-border text-primary-dark mb-3" aria-hidden="true"></div>
-                <p class="text-muted mb-0">Carregando notícias...</p>
-            </div>
-
-            <div id="noticias-erro" class="alert alert-warning d-none" role="alert">
-                <p class="mb-3">Não foi possível carregar as notícias agora.</p>
-                <button id="tentar-novamente" class="btn btn-outline-primary-dark btn-sm fw-semibold" type="button">Tentar novamente</button>
-            </div>
-
-            <div id="noticias-vazio" class="news-status text-center py-5 d-none" role="status">
-                <i class="bi bi-newspaper d-block mb-3" aria-hidden="true"></i>
-                <p class="text-muted mb-0">Nenhuma notícia publicada no momento.</p>
-            </div>
-
             <article id="noticia-destaque" class="featured-news bg-white border shadow-sm overflow-hidden mb-4 d-none">
                 <div class="row g-0">
                     <div class="col-lg-7">
@@ -79,7 +64,9 @@
                             <h3 id="destaque-titulo" class="h2 fw-bold text-primary-dark"></h3>
                             <p id="destaque-resumo" class="text-muted"></p>
                             <div id="destaque-data" class="news-meta mb-4"></div>
-                            <a id="destaque-link" class="btn btn-primary-dark fw-semibold align-self-start" target="_blank" rel="noopener noreferrer">Leia a notícia</a>
+                            <a id="destaque-link" class="btn btn-primary-dark news-read-more align-self-start" target="_blank" rel="noopener noreferrer">
+                                Leia mais<i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

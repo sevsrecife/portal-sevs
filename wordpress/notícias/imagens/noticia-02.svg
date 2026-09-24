@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Placeholder institucional de notícia</title>
+  <desc id="description">Imagem provisória clara com identificação da SEVS Recife</desc>
+  <rect width="1200" height="675" fill="#e8eef5"/>
+  <rect x="0" y="0" width="1200" height="18" fill="#db400a"/>
+  <rect x="780" y="0" width="420" height="675" fill="#1e73be"/>
+  <text x="90" y="280" fill="#12346b" font-family="sans-serif" font-size="72" font-weight="700">SEVS RECIFE</text>
+  <text x="94" y="355" fill="#12346b" font-family="sans-serif" font-size="32">CONTEÚDO PROVISÓRIO</text>
+  <text x="94" y="505" fill="#12346b" font-family="sans-serif" font-size="26" opacity="0.78">Informação para a população</text>
+</svg>
