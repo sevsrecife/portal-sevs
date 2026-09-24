@@ -1,4 +1,4 @@
-const MODELOS_NOTICIAS = [
+window.MODELOS_NOTICIAS = [
     {
         categoria: "VIGILÂNCIA EPIDEMIOLÓGICA",
         titulo: "Título de notícia sobre monitoramento epidemiológico",
@@ -43,7 +43,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const lista = document.getElementById("lista-noticias");
     const carregarMais = document.getElementById("carregar-mais");
 
-    MODELOS_NOTICIAS.forEach((noticia) => lista.appendChild(criarModeloNoticia(noticia)));
+    if (!lista || !carregarMais) {
+        return;
+    }
+
+    window.MODELOS_NOTICIAS.forEach((noticia) => lista.appendChild(criarModeloNoticia(noticia)));
     carregarMais.addEventListener("click", () => {
         carregarMais.disabled = true;
         carregarMais.innerHTML = '<i class="bi bi-check2 me-2"></i>Todos os modelos exibidos';

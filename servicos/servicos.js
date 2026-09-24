@@ -1,7 +1,33 @@
 (function () {
     'use strict';
 
-    var servicesUrl = 'https://conecta.recife.pe.gov.br/buscaavancada?b=&c=14&g=&o=&f=&l=&t=';
+    var strategicCards = [
+        {
+            id: 'services',
+            icon: 'bi bi-grid',
+            title: 'Serviços',
+            description: 'Consulte os serviços disponíveis no portal Conecta Recife.',
+            url: 'https://conecta.recife.pe.gov.br/buscaavancada?b=&c=14&g=&o=&f=&l=&t='
+        },
+        {
+            id: 'cie-observatory',
+            icon: 'bi bi-bar-chart-line',
+            title: 'Observatório CIE',
+            description: 'Acesse painéis com informações estratégicas para a Vigilância em Saúde.',
+            url: 'https://vigilanciaemsaude.recife.pe.gov.br/cie/public.html#paineis',
+            label: 'Acessar Observatório',
+            external: true
+        }
+    ].concat((window.MODELOS_NOTICIAS || []).map(function (noticia, index) {
+        return {
+            id: 'news-' + index,
+            icon: 'bi bi-newspaper',
+            title: noticia.titulo,
+            description: noticia.resumo,
+            url: '../../wordpress/notícias/noticias.html',
+            label: 'Acessar notícia'
+        };
+    }));
     var strategicInformationHeading = Array.prototype.find.call(
         document.querySelectorAll('section h3'),
         function (heading) {
@@ -13,20 +39,32 @@
         var cardsRow = strategicInformationHeading.closest('section').querySelector('.row.g-4');
         var templateColumn = cardsRow && cardsRow.lastElementChild;
 
-        if (templateColumn && !cardsRow.querySelector('[data-services-card]')) {
-            var servicesColumn = templateColumn.cloneNode(true);
-            var icon = servicesColumn.querySelector('.bi');
-            var title = servicesColumn.querySelector('h4');
-            var description = servicesColumn.querySelector('p');
-            var link = servicesColumn.querySelector('a.btn');
+        if (templateColumn) {
+            strategicCards.forEach(function (card) {
+                if (cardsRow.querySelector('[data-strategic-card="' + card.id + '"]')) {
+                    return;
+                }
 
-            servicesColumn.setAttribute('data-services-card', '');
-            icon.className = 'bi bi-grid';
-            title.textContent = 'Serviços';
-            description.textContent = 'Consulte os serviços disponíveis no portal Conecta Recife.';
-            link.href = servicesUrl;
+                var cardColumn = templateColumn.cloneNode(true);
+                var icon = cardColumn.querySelector('.bi');
+                var title = cardColumn.querySelector('h4');
+                var description = cardColumn.querySelector('p');
+                var link = cardColumn.querySelector('a.btn');
 
-            cardsRow.appendChild(servicesColumn);
+                cardColumn.setAttribute('data-strategic-card', card.id);
+                icon.className = card.icon;
+                title.textContent = card.title;
+                description.textContent = card.description;
+                link.href = card.url;
+                link.textContent = card.label || 'Acessar';
+
+                if (card.external) {
+                    link.target = '_blank';
+                    link.rel = 'noopener noreferrer';
+                }
+
+                cardsRow.appendChild(cardColumn);
+            });
         }
     }
 
