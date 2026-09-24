@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-dark: #12346b;
+    --primary-light: #1e73be;
+    --accent-orange: #db400a;
+    --accent-blue: #4a8eff;
+    --warning: #ffc107;
+    --body-bg: #f5f7fa;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: var(--body-bg);
+    font-family: 'Manrope', 'Segoe UI', Roboto, sans-serif;
+    color: #444444;
+}
+
+/* Utilitários Globais */
+.bg-primary-dark { background-color: var(--primary-dark) !important; }
+.bg-primary-light { background-color: var(--primary-light) !important; }
+.bg-body-custom { background-color: var(--body-bg) !important; }
+
+.text-primary-dark { color: var(--primary-dark) !important; }
+.text-primary-light { color: var(--primary-light) !important; }
+.text-accent-orange { color: var(--accent-orange) !important; }
+.text-accent-blue { color: var(--accent-blue) !important; }
+
+.fw-extrabold { font-weight: 800; }
+
+*:focus-visible {
+    outline: 3px solid var(--accent-orange) !important;
+    outline-offset: 2px;
+}
+
+/* Botões */
+.btn-primary-dark {
+    background-color: var(--primary-dark);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-primary-dark:hover {
+    background-color: #0d2752;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(18, 52, 107, 0.2) !important;
+}
+
+.btn-outline-accent-blue {
+    color: var(--accent-blue);
+    border: 2px solid var(--accent-blue);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+.btn-outline-accent-blue:hover {
+    background-color: var(--accent-blue);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Navegação */
+.transition-nav {
+    transition: all 0.3s ease-in-out;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.transition-nav.scrolled {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    background-color: rgba(255,255,255,0.98) !important;
+    backdrop-filter: blur(10px);
+}
+
+/* Hero Section */
+.hero-bg-pattern {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: radial-gradient(var(--primary-light) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.05;
+    z-index: 0;
+}
+
+/* Cards de Documentos */
+.hover-elevate {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.document-card {
+    border-left: 4px solid var(--accent-blue) !important;
+}
+.hover-elevate:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(18, 52, 107, 0.1) !important;
+    background-color: white !important;
+    border-left-color: var(--accent-orange) !important;
+}
+
+#filtroDocumentos:focus {
+    box-shadow: none;
+    border-color: var(--primary-light);
+}

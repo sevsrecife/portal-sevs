@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - GESP Recife</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="noticias.css">
+    <link rel="stylesheet" href="../../footer/footer.css">
+</head>
+<body class="bg-body-custom min-vh-100 d-flex flex-column">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top transition-nav shadow-sm" aria-label="Navegação de notícias">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio" aria-label="Início das Notícias">
+                <span class="h6 mb-0 fw-bold text-primary-dark">Notícias</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-2">
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="#" onclick="window.history.back(); return false;"><i class="bi bi-arrow-left me-1"></i>Voltar</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="../boletins/boletim.html"><i class="bi bi-journal-medical me-1"></i>Boletins</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="../informes/informe.html"><i class="bi bi-envelope-paper me-1"></i>Informes</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="../perfis/perfis.html"><i class="bi bi-person-vcard me-1"></i>Perfis</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="../Materiais/materiais.html"><i class="bi bi-journal-bookmark me-1"></i>Materiais</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow-1">
+        <section id="inicio" class="news-hero border-bottom">
+            <div class="container py-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8">
+                        <span class="section-label">COMUNICAÇÃO EM SAÚDE</span>
+                        <h1 class="fw-extrabold text-primary-dark display-5 mt-3 mb-3">Notícias</h1>
+                        <p class="lead text-muted mb-0">Acompanhe informações, ações e atualizações da Vigilância em Saúde do Recife.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end" aria-hidden="true">
+                        <i class="bi bi-newspaper news-hero-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5" aria-labelledby="ultimas-noticias">
+            <div class="mb-4">
+                <span class="section-label">INFORME-SE</span>
+                <h2 id="ultimas-noticias" class="h3 fw-bold text-primary-dark mt-2 mb-1">Modelos de notícias</h2>
+                <p class="text-muted mb-0">Estruturas demonstrativas prontas para receber as publicações oficiais.</p>
+            </div>
+
+            <article class="featured-news bg-white border shadow-sm overflow-hidden mb-4">
+                <div class="row g-0">
+                    <div class="col-lg-7">
+                        <div class="news-image news-image-featured d-flex align-items-center justify-content-center" role="img" aria-label="Espaço reservado para a imagem da notícia em destaque">
+                            <i class="bi bi-image" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="p-4 p-xl-5 h-100 d-flex flex-column justify-content-center">
+                            <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                                <span class="news-category">DESTAQUE</span>
+                                <span class="news-model-label">CONTEÚDO MODELO</span>
+                            </div>
+                            <h3 class="h2 fw-bold text-primary-dark">Título principal da notícia em destaque</h3>
+                            <p class="text-muted">Use este espaço para apresentar o resumo da publicação com as informações essenciais para o leitor.</p>
+                            <div class="news-meta mb-4"><i class="bi bi-calendar3 me-2"></i>DD/MM/AAAA</div>
+                            <button class="btn btn-primary-dark fw-semibold align-self-start" type="button" disabled>Leia a notícia</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="row g-4" id="lista-noticias" aria-label="Modelos de notícias"></div>
+
+            <div class="text-center mt-5">
+                <button id="carregar-mais" class="btn btn-outline-primary-dark fw-semibold" type="button">
+                    <i class="bi bi-plus-lg me-2"></i>Carregar mais
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <div id="sevs-footer" data-root="../../" data-links="portal,gesp,portarias,notificacao,carta,prefeitura,sesau" data-title="Secretaria Executiva de Vigilância em Saúde" data-description="Notícias da Vigilância em Saúde do Recife."></div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="noticias.js"></script>
+    <script src="../../footer/footer.js"></script>
+</body>
+</html>

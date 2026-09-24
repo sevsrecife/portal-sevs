@@ -1,0 +1,254 @@
+/* ==========================================================================
+   Identidade Visual GESP Recife
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-dark: #12346b;   /* Azul Royal */
+    --primary-light: #1e73be;  /* Azul Médio */
+    --accent-orange: #db400a;  /* Laranja Destaque */
+    --accent-blue: #4a8eff;    /* Azul Claro */
+    --warning: #ffc107;        /* Amarelo de Alerta */
+    --body-bg: #f5f7fa;        /* Fundo Neutro Claro diferenciado */
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--body-bg);
+    font-family: 'Manrope', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    padding-top: 80px; 
+    color: #444444;
+}
+
+.bg-primary-dark { background-color: var(--primary-dark) !important; }
+.bg-primary-light { background-color: var(--primary-light) !important; }
+.bg-body-custom { background-color: var(--body-bg) !important; }
+
+.text-primary-dark { color: var(--primary-dark) !important; }
+.text-primary-light { color: var(--primary-light) !important; }
+.text-accent-orange { color: var(--accent-orange) !important; }
+.text-accent-blue { color: var(--accent-blue) !important; }
+
+.fw-extrabold { font-weight: 800; }
+
+*:focus-visible {
+    outline: 3px solid var(--accent-orange) !important;
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Navbar Diferenciado
+   ========================================================================== */
+.navbar {
+    transition: padding 0.3s ease, background-color 0.3s ease;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+}
+
+/* ==========================================================================
+   Botões
+   ========================================================================== */
+.btn-accent-orange {
+    background-color: var(--accent-orange);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-accent-orange:hover, .btn-accent-orange:focus {
+    background-color: #b83508; 
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-primary-dark {
+    background-color: var(--primary-dark);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-dark:hover, .btn-primary-dark:focus {
+    background-color: #0d2752;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline-accent-blue {
+    color: var(--accent-blue);
+    border-color: var(--accent-blue);
+    border-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary-dark {
+    color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary-dark:hover {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+/* ==========================================================================\n+   Hero Section\n+   ========================================================================== */
+.hero-section-gesp {
+    background: #f5f7fa;
+    border-bottom: 1px solid #d8e1ec;
+}
+
+.hero-institutional-gesp {
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #d5deea;
+    border-top: 6px solid var(--primary-dark);
+}
+
+.hero-institutional-header-gesp {
+    padding: 0.85rem 1.5rem;
+    color: #ffffff;
+    background: var(--primary-dark);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+    text-transform: uppercase;
+}
+
+.hero-institutional-copy-gesp {
+    padding: clamp(2rem, 5vw, 3.75rem);
+    border-right: 1px solid #e1e6ed;
+}
+
+.hero-institutional-copy-gesp h2 {
+    max-width: 760px;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.12;
+}
+
+.hero-institutional-copy-gesp p {
+    max-width: 680px;
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+.hero-kicker-gesp {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--accent-orange);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.hero-institutional-service-gesp {
+    padding: 2rem clamp(1.5rem, 4vw, 3rem);
+}
+
+.hero-service-heading-gesp {
+    margin-bottom: 1.5rem;
+    color: var(--primary-dark);
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.hero-service-heading-gesp i { color: var(--accent-orange); }
+
+.hero-service-data-gesp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.85rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--accent-orange);
+}
+
+.hero-service-data-gesp strong { color: var(--primary-dark); font-size: 1.55rem; line-height: 1.15; }
+.hero-service-data-gesp span { margin-top: 0.35rem; color: #68778b; font-size: 0.8rem; }
+
+.hero-institutional-footer-gesp {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #e1e6ed;
+    color: #596b80;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.hero-institutional-footer-gesp i { color: var(--accent-orange); }
+
+@media (max-width: 991.98px) {
+    .hero-institutional-copy-gesp { border-right: 0; border-bottom: 1px solid #e1e6ed; }
+    .hero-institutional-service-gesp { padding-top: 1.75rem; padding-bottom: 1.75rem; }
+}
+
+/* ==========================================================================
+   Cards de Atividades
+   ========================================================================== */
+.activity-card-gesp {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--accent-blue) !important;
+}
+
+.activity-col:nth-child(even) .activity-card-gesp {
+    border-top-color: var(--accent-orange) !important;
+}
+
+.activity-card-gesp:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(18, 52, 107, 0.08) !important;
+    background-color: white !important;
+}
+
+.icon-wrapper-gesp {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+/* ==========================================================================
+   Notifique Aqui
+   ========================================================================== */
+.notification-card-gesp {
+    border-left: 10px solid var(--accent-orange) !important;
+}
+
+.notification-contact-gesp {
+    background-image: radial-gradient(var(--accent-orange) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* ==========================================================================
+   Cards Acervo
+   ========================================================================== */
+.hover-elevate {
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-elevate:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.06) !important;
+}
+
+.document-card-gesp {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03) !important;
+}
+
+.document-card-gesp:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(18, 52, 107, 0.08) !important;
+}

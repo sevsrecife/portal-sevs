@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plenárias - GESP Recife</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="plenarias.css">
+    <link rel="stylesheet" href="../../footer/footer.css">
+</head>
+<body class="bg-body-custom pt-5 min-vh-100 d-flex flex-column">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top transition-nav shadow-sm" aria-label="Navegação das plenárias">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../../gerencias/gesp/gesp.html" aria-label="Página inicial da GESP">
+                <h1 class="h6 mb-0 fw-bold text-primary-dark">Plenárias GESP Recife</h1>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-2">
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="../../gerencias/gesp/gesp.html">Voltar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5 mt-4">
+        <div id="inicio" class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <!-- Header -->
+                <div class="text-center mb-4">
+                    <span class="badge bg-primary-light text-white mb-2 px-3 py-1 rounded-pill">GESTÃO EM SAÚDE</span>
+                    <h2 class="fw-extrabold text-primary-dark display-6">Plenárias GESP Recife</h2>
+                    <p class="text-muted">Encontros quinzenais online para fortalecer a Vigilância em Saúde por meio de diálogos e informações estratégicas. Às quartas-feiras, às 14h.</p>
+                </div>
+
+                <!-- Botão Google Meet -->
+                <div class="text-center mb-5">
+                    <a href="https://meet.google.com/pxm-ssoc-udr" target="_blank" rel="noopener noreferrer"
+                       class="btn btn-accent-orange btn-lg rounded-pill px-5 py-3 fw-bold shadow hover-elevate d-inline-flex align-items-center"
+                       aria-label="Link para a reunião online no Google Meet">
+                        <i class="bi bi-camera-video-fill fs-5 me-2"></i> Acessar Plenária Online
+                    </a>
+                </div>
+
+                <!-- Cronograma -->
+                <div class="d-flex align-items-center mb-4">
+                    <i class="bi bi-calendar-event fs-3 text-primary-dark me-2"></i>
+                    <h3 class="fw-bold text-primary-dark m-0">Cronograma de Plenárias 2026</h3>
+                </div>
+
+                <div class="card border-0 rounded-4 shadow-sm overflow-hidden document-card-gesp">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-fill border-bottom-0 bg-light" id="plenariasTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active py-3 fw-bold border-0 text-primary-dark rounded-0"
+                                    id="arealizar-tab" data-bs-toggle="tab" data-bs-target="#arealizar"
+                                    type="button" role="tab" aria-controls="arealizar" aria-selected="true"
+                                    style="border-bottom: 3px solid var(--primary-dark) !important;">
+                                Próximas Plenárias
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link py-3 fw-bold border-0 text-muted rounded-0 bg-light"
+                                    id="realizadas-tab" data-bs-toggle="tab" data-bs-target="#realizadas"
+                                    type="button" role="tab" aria-controls="realizadas" aria-selected="false"
+                                    style="border-bottom: 3px solid transparent !important;">
+                                Plenárias Realizadas
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!-- Tab content -->
+                    <div class="tab-content p-4 p-md-5 bg-white" id="plenariasTabContent">
+
+                        <!-- Aba: A Realizar -->
+                        <div class="tab-pane fade show active" id="arealizar" role="tabpanel" aria-labelledby="arealizar-tab">
+
+                            <!-- Desktop -->
+                            <div class="table-responsive d-none d-md-block">
+                                <table class="table table-hover align-middle mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-primary-dark fw-bold border-bottom-0 pb-3 fs-6">Data</th>
+                                            <th scope="col" class="text-primary-dark fw-bold border-bottom-0 pb-3 fs-6">Horário</th>
+                                            <th scope="col" class="text-primary-dark fw-bold border-bottom-0 pb-3 fs-6">Pauta / Tema</th>
+                                            <th scope="col" class="text-primary-dark fw-bold border-bottom-0 pb-3 fs-6">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-bottom">
+                                            <td class="fw-semibold text-dark py-3">15/07/2026</td>
+                                            <td class="text-muted py-3"><i class="bi bi-clock me-1"></i> 14:00</td>
+                                            <td class="py-3">Cenário Epidemiológico das Arboviroses e Protocolos de Manejo</td>
+                                            <td class="py-3"><span class="badge bg-primary-light text-white rounded-pill px-3 py-2 fw-medium">Agendado</span></td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="fw-semibold text-dark py-3">29/07/2026</td>
+                                            <td class="text-muted py-3"><i class="bi bi-clock me-1"></i> 14:00</td>
+                                            <td class="py-3">Atualizações sobre Doenças Respiratórias (SRAG)</td>
+                                            <td class="py-3"><span class="badge bg-primary-light text-white rounded-pill px-3 py-2 fw-medium">Agendado</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-semibold text-dark py-3">12/08/2026</td>
+                                            <td class="text-muted py-3"><i class="bi bi-clock me-1"></i> 14:00</td>
+                                            <td class="py-3 text-muted fst-italic">Tema a ser definido</td>
+                                            <td class="py-3"><span class="badge bg-primary-light text-white rounded-pill px-3 py-2 fw-medium">Agendado</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile -->
+                            <div class="d-md-none d-flex flex-column gap-3">
+                                <div class="card border border-light shadow-sm bg-body-custom rounded-3">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold text-primary-dark mb-0 d-flex align-items-center">
+                                                <i class="bi bi-calendar-event me-2 text-primary-light"></i> 15/07/2026
+                                            </h5>
+                                            <span class="badge bg-primary-light text-white rounded-pill px-2 py-1">Agendado</span>
+                                        </div>
+                                        <p class="card-text text-muted mb-2 small"><i class="bi bi-clock me-1"></i> 14:00 - Quarta-feira</p>
+                                        <p class="card-text fw-medium text-dark mb-0">Cenário Epidemiológico das Arboviroses e Protocolos de Manejo</p>
+                                    </div>
+                                </div>
+                                <div class="card border border-light shadow-sm bg-body-custom rounded-3">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold text-primary-dark mb-0 d-flex align-items-center">
+                                                <i class="bi bi-calendar-event me-2 text-primary-light"></i> 29/07/2026
+                                            </h5>
+                                            <span class="badge bg-primary-light text-white rounded-pill px-2 py-1">Agendado</span>
+                                        </div>
+                                        <p class="card-text text-muted mb-2 small"><i class="bi bi-clock me-1"></i> 14:00 - Quarta-feira</p>
+                                        <p class="card-text fw-medium text-dark mb-0">Atualizações sobre Doenças Respiratórias (SRAG)</p>
+                                    </div>
+                                </div>
+                                <div class="card border border-light shadow-sm bg-body-custom rounded-3">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title fw-bold text-primary-dark mb-0 d-flex align-items-center">
+                                                <i class="bi bi-calendar-event me-2 text-primary-light"></i> 12/08/2026
+                                            </h5>
+                                            <span class="badge bg-primary-light text-white rounded-pill px-2 py-1">Agendado</span>
+                                        </div>
+                                        <p class="card-text text-muted mb-2 small"><i class="bi bi-clock me-1"></i> 14:00 - Quarta-feira</p>
+                                        <p class="card-text text-muted fst-italic mb-0">Tema a ser definido</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Aba: Realizadas -->
+                        <div class="tab-pane fade" id="realizadas" role="tabpanel" aria-labelledby="realizadas-tab">
+
+                            <!-- Desktop -->
+                            <div class="table-responsive d-none d-md-block">
+                                <table class="table table-hover align-middle mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-primary-dark fw-bold border-bottom-0 pb-3 fs-6" style="width: 20%;">Data</th>
+                                            <th scope="col" class="text-primary-dark fw-bold border-bottom-0 pb-3 fs-6" style="width: 55%;">Tema Discutido</th>
+                                            <th scope="col" class="text-primary-dark fw-bold border-bottom-0 pb-3 fs-6 text-end" style="width: 25%;">Material de Apoio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-bottom">
+                                            <td class="fw-semibold text-dark py-3">01/07/2026</td>
+                                            <td class="py-3">Vigilância e Monitoramento de Doenças Diarreicas Agudas (DDA)</td>
+                                            <td class="py-3 text-end">
+                                                                <span class="btn btn-sm btn-outline-secondary rounded-pill px-4 py-2 fw-medium disabled"
+                                                                    aria-label="Material de apoio da plenária de 01 de julho indisponível" aria-disabled="true">
+                                                    <i class="bi bi-file-earmark-pdf-fill me-1 text-danger"></i> Resumo / Ata
+                                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="fw-semibold text-dark py-3">17/06/2026</td>
+                                            <td class="py-3">Alinhamento Operacional: Fluxo de Notificação Imediata</td>
+                                            <td class="py-3 text-end">
+                                                                <span class="btn btn-sm btn-outline-secondary rounded-pill px-4 py-2 fw-medium disabled"
+                                                                    aria-label="Material de apoio da plenária de 17 de junho indisponível" aria-disabled="true">
+                                                    <i class="bi bi-file-earmark-play-fill me-1 text-accent-blue"></i> Gravação
+                                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile -->
+                            <div class="d-md-none d-flex flex-column gap-3">
+                                <div class="card border border-light shadow-sm bg-body-custom rounded-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold text-primary-dark mb-2 d-flex align-items-center">
+                                            <i class="bi bi-check-circle-fill text-success me-2"></i> 01/07/2026
+                                        </h5>
+                                        <p class="card-text fw-medium text-dark mb-3">Vigilância e Monitoramento de Doenças Diarreicas Agudas (DDA)</p>
+                                                     <span class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-2 w-100 fw-semibold disabled"
+                                                         aria-label="Material de apoio da plenária de 01 de julho indisponível" aria-disabled="true">
+                                            <i class="bi bi-file-earmark-pdf-fill me-1 text-danger"></i> Acessar Resumo / Ata
+                                                     </span>
+                                    </div>
+                                </div>
+                                <div class="card border border-light shadow-sm bg-body-custom rounded-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold text-primary-dark mb-2 d-flex align-items-center">
+                                            <i class="bi bi-check-circle-fill text-success me-2"></i> 17/06/2026
+                                        </h5>
+                                        <p class="card-text fw-medium text-dark mb-3">Alinhamento Operacional: Fluxo de Notificação Imediata</p>
+                                                     <span class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-2 w-100 fw-semibold disabled"
+                                                         aria-label="Material de apoio da plenária de 17 de junho indisponível" aria-disabled="true">
+                                            <i class="bi bi-file-earmark-play-fill me-1 text-accent-blue"></i> Assistir Gravação
+                                                     </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div id="sevs-footer" data-root="../../" data-links="portal,gesp,portarias,notificacao,carta,prefeitura,sesau" data-title="Secretaria Executiva de Vigilância em Saúde" data-description="Acervo de plenárias da Gerência de Emergências em Saúde Pública."></div>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="plenarias.js"></script>
+    <script src="../../footer/footer.js"></script>
+</body>
+</html>

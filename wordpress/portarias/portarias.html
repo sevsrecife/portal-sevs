@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portarias e Legislações - SEVS Recife</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="portarias.css">
+    <link rel="stylesheet" href="../../footer/footer.css">
+</head>
+<body class="bg-body-custom min-vh-100 d-flex flex-column">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top transition-nav shadow-sm" aria-label="Navegação">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                <div class="border-start ps-2 border-primary border-3">
+                    <h1 class="h6 mb-0 fw-bold text-primary-dark">PORTARIAS E LEGISLAÇÕES</h1>
+                    <span class="d-block text-muted" style="font-size: 0.7rem;">Vigilância em Saúde - Recife</span>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-2">
+                    <li class="nav-item"><a class="nav-link fw-medium text-primary-dark active" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium text-primary-dark" href="#acervo">Acervo de Documentos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero-section text-center text-lg-start d-flex align-items-center bg-body-custom border-bottom pt-5" style="min-height: 40vh;">
+        <div class="hero-bg-pattern"></div>
+        <div class="container position-relative z-index-1 py-5 mt-4">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="icon-wrapper mx-auto mb-3 text-accent-orange bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                        <i class="bi bi-bank fs-2"></i>
+                    </div>
+                    <h2 class="display-5 fw-extrabold text-primary-dark mb-3">Portarias e Marcos Legais</h2>
+                    <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                        Acesso aos documentos oficiais, normativas e portarias que regulamentam as ações de notificação compulsória e vigilância em saúde no município do Recife.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="acervo" class="py-5 bg-white">
+        <div class="container py-4">
+            
+            <div class="row mb-5 align-items-center">
+                <div class="col-md-6">
+                    <h3 class="fw-bold text-primary-dark mb-0">Documentos Publicados</h3>
+                </div>
+                <div class="col-md-6 mt-3 mt-md-0">
+                    <div class="input-group shadow-sm rounded-pill overflow-hidden border border-primary-light border-opacity-25">
+                        <span class="input-group-text bg-white border-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="filtroDocumentos" class="form-control border-0 shadow-none" placeholder="Buscar por número, ano ou assunto...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="listaDocumentos">
+                <div class="col-md-6 doc-item">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-body-custom p-2 document-card">
+                        <div class="card-body p-4 d-flex align-items-start gap-3">
+                            <div class="text-accent-orange">
+                                <i class="bi bi-file-earmark-pdf-fill" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <div>
+                                <span class="badge bg-primary-light text-white mb-2">Estadual</span>
+                                <h5 class="fw-bold text-primary-dark doc-titulo">Portaria SES/PE Nº 660/2022</h5>
+                                <p class="text-muted small mb-3 doc-desc">Estabelece a Lista Estadual de Doenças e Agravos de Notificação Compulsória no âmbito de Pernambuco.</p>
+                                <a href="Portaria SES-PE nº 660 de 17 de outubro de 2022.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-accent-blue btn-sm rounded-pill fw-bold px-3">
+                                    <i class="bi bi-download me-1"></i> Baixar PDF
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 doc-item">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-body-custom p-2 document-card">
+                        <div class="card-body p-4 d-flex align-items-start gap-3">
+                            <div class="text-accent-orange">
+                                <i class="bi bi-file-earmark-pdf-fill" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <div>
+                                <span class="badge bg-primary-dark text-white mb-2">Federal</span>
+                                <h5 class="fw-bold text-primary-dark doc-titulo">Portaria GM/MS Nº 5.201/2024</h5>
+                                <p class="text-muted small mb-3 doc-desc">Altera a Portaria de Consolidação GM/MS nº 4, de 28 de setembro de 2017, para atualizar a Lista Nacional de Notificação Compulsória.</p>
+                                <a href="PORTARIA GM_MS Nº 5.201, DE 15 DE AGOSTO DE 2024.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-accent-blue btn-sm rounded-pill fw-bold px-3">
+                                    <i class="bi bi-download me-1"></i> Baixar PDF
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="sevs-footer" data-root="../../" data-links="portal,gesp,notificacao,carta,prefeitura,sesau" data-title="Secretaria Executiva de Vigilância em Saúde" data-description="Acervo de portarias e marcos legais da Vigilância em Saúde do Recife."></div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    
+    <script src="portarias.js"></script>
+    <script src="../../footer/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* ============================================================
+   Footer institucional SEVS — estilos compartilhados
+   Carregado em todas as páginas junto com footer/footer.js
+   ============================================================ */
+
+/* Parágrafo de configuração embutido no container (nunca exibido) */
+#sevs-footer > p {
+    display: none;
+}
+
+/* Links do footer */
+.hover-white:hover {
+    color: #ffffff !important;
+}
+
+.text-justify {
+    text-align: justify;
+}

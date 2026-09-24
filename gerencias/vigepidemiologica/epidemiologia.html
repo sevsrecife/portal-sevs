@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigilância Epidemiológica - SEVS Recife</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="epidemiologia.css">
+    <link rel="stylesheet" href="../../footer/footer.css">
+    
+</head>
+<body class="bg-body-custom min-vh-100 d-flex flex-column">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top transition-nav" aria-label="Navegação Vigilância Epidemiológica">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio" aria-label="Página Inicial da Vigilância Epidemiológica">
+                <img src="https://placehold.co/150x50/eeeeee/333333?text=Logo+Recife" alt="Prefeitura do Recife" class="me-2 h-auto" style="max-height: 40px;">
+                <div class="d-none d-sm-block border-start ps-2 ms-2" style="border-color: #ddd !important;">
+                    <h1 class="h6 mb-0 fw-bold text-primary-dark">Vigilância Epidemiológica</h1>
+                    <span class="d-block text-muted" style="font-size: 0.7rem;">SEVS Recife</span>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-2">
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="#sistemas">Sistemas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="position-relative overflow-hidden bg-body-custom border-bottom d-flex align-items-center" style="min-height: 52vh; padding-top: 5rem;">
+        <div class="hero-bg-pattern"></div>
+        <div class="container position-relative py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="icon-wrapper mx-auto mb-4 text-primary-dark bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 72px; height: 72px;">
+                        <i class="bi bi-activity fs-2"></i>
+                    </div>
+                    <span class="badge bg-primary-light text-white mb-3 px-3 py-2 rounded-pill fw-bold" style="letter-spacing: 1px; font-size: 0.72rem;">SECRETARIA EXECUTIVA DE VIGILÂNCIA EM SAÚDE</span>
+                    <h1 class="display-5 fw-extrabold text-primary-dark mb-3">Vigilância Epidemiológica</h1>
+                    <p class="lead text-muted mx-auto mb-4" style="max-width: 640px;">
+                        Monitoramento contínuo de doenças transmissíveis e agravos de notificação compulsória, com análise epidemiológica para orientar as ações de saúde pública no Recife.
+                    </p>
+        
+                    <div class="d-flex flex-wrap gap-2 justify-content-center mt-4">
+                        <span class="epi-stat-chip"><i class="bi bi-virus text-accent-blue"></i>49 Agravos Notificáveis</span>
+                        <span class="epi-stat-chip"><i class="bi bi-database text-accent-blue"></i>SINAN · SIM · SINASC</span>
+                        <span class="epi-stat-chip"><i class="bi bi-clock text-accent-blue"></i>Investigação 24h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-extrabold text-primary-dark mb-4">Vigilância Epidemiológica no Recife</h2>
+                    <p class="text-muted mb-3">
+                        A Vigilância Epidemiológica é um conjunto de ações que proporciona o conhecimento, a detecção e a prevenção de qualquer mudança nos fatores determinantes e condicionantes de saúde individual ou coletiva.
+                    </p>
+                    <p class="text-muted mb-4">
+                        No Recife, a equipe de Vigilância Epidemiológica realiza o monitoramento sistemático de doenças e agravos de notificação compulsória, investigação de surtos e emergências em saúde pública, análise de dados do SINAN e articulação com a rede de atenção à saúde.
+                    </p>
+                    <div class="d-flex gap-3 p-3 rounded-3 bg-body-custom border align-items-start">
+                        <div class="text-accent-orange flex-shrink-0 mt-1">
+                            <i class="bi bi-info-circle-fill fs-5"></i>
+                        </div>
+                        <div class="text-muted small">
+                            A <strong class="text-primary-dark">Portaria GM/MS nº 5.201/2024</strong> e a <strong class="text-primary-dark">Portaria SES-PE nº 660/2022</strong> estabelecem a lista de doenças e agravos de notificação compulsória no âmbito federal e estadual.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-3 h-100 hover-elevate portal-card default-card">
+                                <div class="text-accent-blue mb-2"><i class="bi bi-clipboard2-pulse fs-3"></i></div>
+                                <div class="fw-bold text-primary-dark small mb-1">Notificação</div>
+                                <div class="text-muted" style="font-size: 0.8rem;">Registro compulsório de doenças e agravos no SINAN</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-3 h-100 hover-elevate portal-card default-card">
+                                <div class="text-accent-orange mb-2"><i class="bi bi-search fs-3"></i></div>
+                                <div class="fw-bold text-primary-dark small mb-1">Investigação</div>
+                                <div class="text-muted" style="font-size: 0.8rem;">Investigação de casos, surtos e emergências em saúde pública</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-3 h-100 hover-elevate portal-card default-card">
+                                <div class="text-primary-light mb-2"><i class="bi bi-graph-up-arrow fs-3"></i></div>
+                                <div class="fw-bold text-primary-dark small mb-1">Análise</div>
+                                <div class="text-muted" style="font-size: 0.8rem;">Análise e interpretação de dados epidemiológicos</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-3 h-100 hover-elevate portal-card default-card">
+                                <div class="text-primary-dark mb-2"><i class="bi bi-megaphone fs-3"></i></div>
+                                <div class="fw-bold text-primary-dark small mb-1">Divulgação</div>
+                                <div class="text-muted" style="font-size: 0.8rem;">Boletins, informes e alertas para a rede de saúde</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sistemas" class="py-5 bg-body-custom">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-extrabold text-primary-dark display-6 mb-3">Sistemas de Informação</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">Principais sistemas utilizados na coleta, análise e gestão dos dados epidemiológicos no município.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 h-100 portal-card default-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="icon-wrapper text-primary-dark bg-body-custom rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                                    <i class="bi bi-database fs-5"></i>
+                                </div>
+                                <h5 class="fw-bold text-primary-dark mb-0">SINAN</h5>
+                            </div>
+                            <p class="text-muted small flex-grow-1">Sistema de Informação de Agravos de Notificação. Principal base de dados para notificação compulsória de doenças e agravos no SUS.</p>
+                            <span class="btn btn-outline-secondary rounded-pill w-100 fw-medium mt-3 disabled" aria-disabled="true" style="border-width: 1.5px; padding: 0.6rem 0;">
+                                <i class="bi bi-file-earmark-text me-2"></i>Dicionário de Dados indisponível
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 h-100 portal-card default-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="icon-wrapper text-primary-dark bg-body-custom rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                                    <i class="bi bi-virus fs-5"></i>
+                                </div>
+                                <h5 class="fw-bold text-primary-dark mb-0">DDT</h5>
+                            </div>
+                            <p class="text-muted small mb-0">Divisão de Controle de Doenças Transmissíveis. Coordena a vigilância, prevenção e controle de doenças infecciosas e parasitárias de notificação compulsória no município.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 h-100 portal-card default-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="icon-wrapper text-primary-dark bg-body-custom rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                                    <i class="bi bi-clipboard-heart fs-5"></i>
+                                </div>
+                                <h5 class="fw-bold text-primary-dark mb-0">SIM / SINASC</h5>
+                            </div>
+                            <p class="text-muted small mb-0">Sistema de Informações sobre Mortalidade e de Nascidos Vivos. Base para análise de mortalidade e natalidade no município.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 h-100 portal-card default-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="icon-wrapper text-primary-dark bg-body-custom rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                                    <i class="bi bi-gender-ambiguous fs-5"></i>
+                                </div>
+                                <h5 class="fw-bold text-primary-dark mb-0">IST</h5>
+                            </div>
+                            <p class="text-muted small mb-0">Infecções Sexualmente Transmissíveis. Vigilância epidemiológica do HIV/AIDS, sífilis e demais IST, com ações de prevenção, diagnóstico e controle no município.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 h-100 portal-card default-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="icon-wrapper text-primary-dark bg-body-custom rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                                    <i class="bi bi-heart-pulse fs-5"></i>
+                                </div>
+                                <h5 class="fw-bold text-primary-dark mb-0">DANT</h5>
+                            </div>
+                            <p class="text-muted small mb-0">Doenças e Agravos Não Transmissíveis. Monitoramento de doenças crônicas, violências, acidentes e outros agravos não infecciosos de relevância em saúde pública.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publicacoes" class="py-5 bg-body-custom border-top">
+        <div class="container py-5">
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mb-5 text-center">
+                <div>
+                    <h3 class="fw-bold text-primary-dark mb-0">Informações Estratégicas</h3>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 portal-card default-card">
+                        <div class="card-body p-4 text-center d-flex flex-column">
+                            <div class="mx-auto mb-3 text-primary-dark d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                <i class="bi bi-journal-medical" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h4 class="fw-bold text-primary-dark mb-2" style="font-size: 1.4rem;">Boletins</h4>
+                            <p class="text-muted small mb-4 flex-grow-1" style="font-size: 0.95rem;">Publicações periódicas para acompanhamento da situação epidemiológica.</p>
+                            <a href="../../wordpress/boletins/boletim.html" class="btn btn-outline-primary-dark rounded-pill w-100 fw-medium" style="border-width: 1.5px; padding: 0.6rem 0;">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 portal-card default-card">
+                        <div class="card-body p-4 text-center d-flex flex-column">
+                            <div class="mx-auto mb-3 text-primary-dark d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                <i class="bi bi-envelope-paper" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h4 class="fw-bold text-primary-dark mb-2" style="font-size: 1.4rem;">Informes</h4>
+                            <p class="text-muted small mb-4 flex-grow-1" style="font-size: 0.95rem;">Comunicados técnicos e orientações para a rede de saúde.</p>
+                            <a href="../../wordpress/informes/informe.html" class="btn btn-outline-primary-dark rounded-pill w-100 fw-medium" style="border-width: 1.5px; padding: 0.6rem 0;">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 portal-card default-card">
+                        <div class="card-body p-4 text-center d-flex flex-column">
+                            <div class="mx-auto mb-3 text-primary-dark d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                <i class="bi bi-pie-chart" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h4 class="fw-bold text-primary-dark mb-2" style="font-size: 1.4rem;">Perfis</h4>
+                            <p class="text-muted small mb-4 flex-grow-1" style="font-size: 0.95rem;">Análise detalhada de morbimortalidade local.</p>
+                            <a href="../../wordpress/perfis/perfis.html" class="btn btn-outline-primary-dark rounded-pill w-100 fw-medium" style="border-width: 1.5px; padding: 0.6rem 0;">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 portal-card default-card">
+                        <div class="card-body p-4 text-center d-flex flex-column">
+                            <div class="mx-auto mb-3 text-primary-dark d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                <i class="bi bi-journal-bookmark" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h4 class="fw-bold text-primary-dark mb-2" style="font-size: 1.4rem;">Materiais Educativos</h4>
+                            <p class="text-muted small mb-4 flex-grow-1" style="font-size: 0.95rem;">Guias, cartilhas e materiais de apoio para as equipes.</p>
+                            <a href="../../wordpress/Materiais/materiais.html" class="btn btn-outline-primary-dark rounded-pill w-100 fw-medium" style="border-width: 1.5px; padding: 0.6rem 0;">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="sevs-footer" data-root="../../" data-title="Vigilância Epidemiológica — SEVS Recife" data-description="Parte integrante do Portal da Secretaria Executiva de Vigilância em Saúde (SEVS) do Recife. Monitoramento, análise e notificação de doenças e agravos de saúde pública."></div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="epidemiologia.js"></script>
+    <script src="../../servicos/servicos.js"></script>
+    <script src="../../footer/footer.js"></script>
+</body>
+</html>

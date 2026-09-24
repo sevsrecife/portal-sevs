@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigilância em Saúde - SEVS Recife</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style-portal.css">
+    <link rel="stylesheet" href="footer/footer.css">
+</head>
+<body class="min-vh-100 d-flex flex-column">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top transition-nav" aria-label="Navegação principal">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio" aria-label="Página Inicial da Vigilância em Saúde">
+                <img src="https://placehold.co/150x50/eeeeee/333333?text=Logo+Recife" alt="Prefeitura do Recife" class="me-2 h-auto" style="max-height: 40px;">
+                <div class="d-none d-sm-block border-start ps-2 ms-2" style="border-color: #ddd !important;">
+                    <h1 class="h6 mb-0 fw-bold text-primary-dark">Vigilância em Saúde</h1>
+                    <span class="d-block text-muted" style="font-size: 0.7rem;">SEVS Recife</span>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-2">
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark active" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="#areas">Gerências Epidemiológicas</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="#nucleos">Núcleos Estratégicos</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="#notifique">Notificação</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero-section text-center text-lg-start d-flex align-items-center position-relative overflow-hidden bg-body-custom border-bottom pt-5 mt-4">
+        <div class="hero-bg-pattern"></div>
+        <div class="container position-relative z-index-1 py-5 my-md-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <h2 class="display-4 fw-extrabold text-primary-dark mb-4 lh-sm">Secretaria Executiva de Vigilância em Saúde</h2>
+                    <p class="lead text-muted mb-5 pe-lg-5 fs-5">
+                        Promovendo a saúde e prevenindo riscos à população recifense através da integração de dados, inteligência epidemiológica e fiscalização sanitária contínua.
+                    </p>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block position-relative">
+                    <div class="hero-image-frame p-2 bg-white shadow-lg rounded-4">
+                        <img src="https://placehold.co/600x450/e9ecef/12346b?text=Integração+de+Dados+SUS" alt="Dashboard de Vigilância" class="img-fluid rounded-3">
+                    </div>
+                    <div class="hero-accent-shape"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="areas" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h3 class="fw-extrabold text-primary-dark display-6 mb-3">Gerências Epidemiológicas</h3>
+                <p class="text-muted mx-auto" style="max-width: 700px;">A SEVS atua de forma multidisciplinar para garantir a segurança sanitária, ambiental e epidemiológica de todo o município.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a href="gerencias/gesp/gesp.html" class="text-decoration-none">
+                        <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-body-custom p-2 portal-card default-card">
+                            <div class="card-body p-4">
+                                <div class="icon-wrapper mb-4 text-primary-dark bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-heart-pulse fs-3"></i>
+                                </div>
+                                <h4 class="fw-bold text-primary-dark mb-2">GESP</h4>
+                                <p class="text-muted small mb-0">Gerência de Emergências em Saúde Pública.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <a href="gerencias/vigepidemiologica/epidemiologia.html" class="text-decoration-none">
+                        <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-body-custom p-2 portal-card default-card">
+                            <div class="card-body p-4">
+                                <div class="icon-wrapper mb-4 text-primary-dark bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-activity fs-3"></i>
+                                </div>
+                                <h4 class="fw-bold text-primary-dark mb-2">GEVEPI</h4>
+                                <p class="text-muted small mb-0">Gerência de Vigilância Epidemiológica.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <a href="gerencias/vigsanitaria/sanitaria.html" class="text-decoration-none">
+                        <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-body-custom p-2 portal-card default-card">
+                            <div class="card-body p-4">
+                                <div class="icon-wrapper mb-4 text-primary-dark bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-shield-plus fs-3"></i>
+                                </div>
+                                <h4 class="fw-bold text-primary-dark mb-2">GEVISA</h4>
+                                <p class="text-muted small mb-0">Gerência de Vigilância Sanitária.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <a href="gerencias/vigambiental/ambiental.html" class="text-decoration-none">
+                        <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-body-custom p-2 portal-card default-card">
+                            <div class="card-body p-4">
+                                <div class="icon-wrapper mb-4 text-primary-dark bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-tree fs-3"></i>
+                                </div>
+                                <h4 class="fw-bold text-primary-dark mb-2">GEVACZ</h4>
+                                <p class="text-muted small mb-0">Gerência de Vigilância Ambiental e Controle de Zoonoses.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <a href="gerencias/saudedotrabalhador/trabalhador.html" class="text-decoration-none">
+                        <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-body-custom p-2 portal-card default-card">
+                            <div class="card-body p-4">
+                                <div class="icon-wrapper mb-4 text-primary-dark bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-person-workspace fs-3"></i>
+                                </div>
+                                <h4 class="fw-bold text-primary-dark mb-2">GEVISAT</h4>
+                                <p class="text-muted small mb-0">Gerência de Vigilância em Saúde do Trabalhador.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nucleos" class="py-5 bg-white border-top">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h3 class="fw-extrabold text-primary-dark display-6 mb-3">Núcleos estratégicos e apoio a gestão</h3>
+                <p class="text-muted mx-auto" style="max-width: 700px;">Núcleos e assessorias que oferecem suporte estratégico, técnico e administrativo à gestão da vigilância em saúde do Recife.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a href="nucleos/planejamento/planejamento.html" class="text-decoration-none">
+                        <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-body-custom p-2 portal-card default-card">
+                            <div class="card-body p-4">
+                                <div class="icon-wrapper mb-4 text-primary-dark bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-graph-up-arrow fs-3"></i>
+                                </div>
+                                <h4 class="fw-bold text-primary-dark mb-2">Núcleo de Planejamento e Monitoramento</h4>
+                                <p class="text-muted small mb-0">Planejamento, monitoramento e avaliação das ações de vigilância em saúde.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <a href="nucleos/transformacao-digital/transformacao-digital.html" class="text-decoration-none">
+                        <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-body-custom p-2 portal-card default-card">
+                            <div class="card-body p-4">
+                                <div class="icon-wrapper mb-4 text-primary-dark bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-cpu fs-3"></i>
+                                </div>
+                                <h4 class="fw-bold text-primary-dark mb-2">Núcleo de Transformação Digital</h4>
+                                <p class="text-muted small mb-0">Inovação e digitalização dos processos e serviços da vigilância em saúde.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <a href="nucleos/neps/neps.html" class="text-decoration-none">
+                        <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-body-custom p-2 portal-card default-card">
+                            <div class="card-body p-4">
+                                <div class="icon-wrapper mb-4 text-primary-dark bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-mortarboard fs-3"></i>
+                                </div>
+                                <h4 class="fw-bold text-primary-dark mb-2">Núcleo de Educação Permanente</h4>
+                                <p class="text-muted small mb-0">Formação continuada e capacitação dos profissionais da rede de vigilância.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <a href="nucleos/governanca/governanca.html" class="text-decoration-none">
+                        <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-body-custom p-2 portal-card default-card">
+                            <div class="card-body p-4">
+                                <div class="icon-wrapper mb-4 text-primary-dark bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-diagram-3 fs-3"></i>
+                                </div>
+                                <h4 class="fw-bold text-primary-dark mb-2">Núcleo de Governança</h4>
+                                <p class="text-muted small mb-0">Articulação, organização e fortalecimento da governança institucional.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="notifique" class="py-5" style="background-color: #fff3e0;">
+        <div class="container py-4">
+            <div class="card border-0 rounded-4 shadow-lg overflow-hidden notification-card-gesp bg-white position-relative">
+                <div class="row g-0">
+                    <div class="col-lg-8 p-5 z-index-1">
+                        <h3 class="fw-bold text-primary-dark mb-3 display-6">Notificação Compulsória e Imediata</h3>
+                        <p class="text-muted fs-6 mb-4">
+                            A notificação de doenças, agravos e eventos de saúde pública é obrigatória para profissionais e estabelecimentos de saúde, em conformidade com as portarias:
+                        </p>
+                        <ul class="list-unstyled mb-4 text-primary-dark fw-medium">
+                            <li class="mb-2">
+                                <a href="wordpress/portarias/Portaria SES-PE nº 660 de 17 de outubro de 2022.pdf" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-primary-dark action-link">
+                                    <i class="bi bi-file-earmark-text-fill text-accent-orange me-2"></i> Portaria SES/PE Nº 660/2022
+                                </a>
+                            </li>
+                            <li>
+                                <a href="wordpress/portarias/PORTARIA GM_MS Nº 5.201, DE 15 DE AGOSTO DE 2024.pdf" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-primary-dark action-link">
+                                    <i class="bi bi-file-earmark-text-fill text-accent-orange me-2"></i> Portaria GM/MS Nº 5.201/2024
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="https://redcap.recife.pe.gov.br/surveys/?s=P4W98FPTCHL7CHXL" target="_blank" rel="noopener noreferrer" class="btn btn-accent-orange rounded-pill px-4 py-2 fw-semibold shadow"><i class="bi bi-exclamation-triangle-fill me-2"></i> Realizar Notificação Compulsória</a>
+                            <a href="https://redcap.recife.pe.gov.br/surveys/?s=HMF3DXNHR4XW8WNM" target="_blank" rel="noopener noreferrer" class="btn btn-primary-dark rounded-pill px-4 py-2 fw-semibold shadow text-white"><i class="bi bi-calendar-week me-2"></i> Realizar Notificação Semanal</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 bg-primary-dark text-white p-5 d-flex flex-column justify-content-center text-center notification-contact-gesp z-index-1">
+                        <i class="bi bi-telephone-inbound fs-1 text-warning mb-3"></i>
+                        <h5 class="fw-bold mb-2">Contato Emergencial</h5>
+                        <p class="small text-light mb-4">Exclusivo para eventos agudos e surtos imediatos.</p>
+                        <h3 class="fw-bold text-warning m-0">0800 281 1520</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="sevs-footer" data-links="portarias,carta,prefeitura,sesau" data-title="Vigilância em Saúde - Recife" data-description="O Portal Institucional da SEVS centraliza as informações de inteligência de dados, normativas e acesso direto aos sistemas de monitoramento (GESP e CIE) para profissionais de saúde e gestão governamental."></div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="script-portal.js"></script>
+    <script src="footer/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - SEVS Recife</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="servicos.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+</head>
+<body class="min-vh-100 d-flex flex-column bg-body-custom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top transition-nav shadow-sm" aria-label="Navegação de serviços">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio" aria-label="Início da página de Serviços">
+                <span class="h6 mb-0 fw-bold text-primary-dark">Serviços</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-2">
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="../index.html">Portal SEVS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="inicio" class="container services-main flex-grow-1 d-flex align-items-center py-5">
+        <div class="row align-items-center justify-content-center g-5 w-100">
+            <div class="col-lg-6">
+                <span class="section-label">ATENDIMENTO AO CIDADÃO</span>
+                <h1 class="display-5 fw-extrabold text-primary-dark mt-3 mb-3">Serviços de Vigilância em Saúde</h1>
+                <p class="lead text-muted mb-0">Consulte os serviços disponíveis, orientações e canais de atendimento da Prefeitura do Recife.</p>
+            </div>
+            <div class="col-lg-5">
+                <div class="card services-card h-100 border-0 shadow-sm bg-white">
+                    <div class="card-body p-4 p-md-5 d-flex flex-column">
+                        <div class="service-icon mb-4 d-flex align-items-center justify-content-center" aria-hidden="true">
+                            <i class="bi bi-grid"></i>
+                        </div>
+                        <h2 class="h3 fw-bold text-primary-dark mb-3">Portal Conecta Recife</h2>
+                        <p class="text-muted mb-4 flex-grow-1">Encontre os serviços de Vigilância em Saúde disponíveis no portal de serviços do Recife.</p>
+                        <a href="https://conecta.recife.pe.gov.br/buscaavancada?b=&amp;c=14&amp;g=&amp;o=&amp;f=&amp;l=&amp;t=" class="btn btn-primary-dark rounded-pill px-4 py-3 fw-semibold" target="_blank" rel="noopener noreferrer">
+                            Acessar serviços <i class="bi bi-box-arrow-up-right ms-2" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="sevs-footer" data-root="../" data-links="portal,gesp,portarias,notificacao,carta,prefeitura,sesau" data-title="Serviços - SEVS Recife" data-description="Acesso aos serviços de Vigilância em Saúde disponíveis no portal Conecta Recife."></div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="servicos.js"></script>
+    <script src="../footer/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde do Trabalhador - SEVS Recife</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="trabalhador.css">
+    <link rel="stylesheet" href="../../footer/footer.css">
+    
+</head>
+<body class="bg-body-custom min-vh-100 d-flex flex-column">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top transition-nav" aria-label="Navegação Saúde do Trabalhador">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio" aria-label="Página Inicial da Saúde do Trabalhador">
+                <div class="border-start border-2 ps-2" style="border-color: #dee2e6 !important;">
+                    <span class="d-block fw-bold text-primary-dark" style="font-size: 0.9rem; line-height: 1.2;">Saúde do Trabalhador</span>
+                    <span class="d-block text-muted" style="font-size: 0.68rem;">SEVS Recife</span>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-2">
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="#acoes">Ações</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="#notificacao">Notificação</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="position-relative overflow-hidden hero-warm border-bottom d-flex align-items-center" style="min-height: 52vh; padding-top: 5rem;">
+        <div class="hero-warm-strip"></div>
+        <div class="hero-bg-pattern"></div>
+        <div class="container position-relative py-5">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="icon-wrapper text-primary-dark bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 64px; height: 64px;">
+                            <i class="bi bi-person-workspace fs-2"></i>
+                        </div>
+                        <span class="badge bg-primary-light text-white px-3 py-2 rounded-pill fw-bold" style="letter-spacing: 1px; font-size: 0.7rem;">SECRETARIA EXECUTIVA DE VIGILÂNCIA EM SAÚDE</span>
+                    </div>
+                    <h1 class="display-5 fw-extrabold text-primary-dark mb-3">Saúde do Trabalhador</h1>
+                    <p class="lead text-muted mb-4" style="max-width: 560px;">
+                        Vigilância, prevenção e atenção integral à saúde dos trabalhadores do município, com ações integradas de assistência, promoção e educação permanente nos ambientes laborais.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#acoes" class="btn btn-accent-orange rounded-pill px-4 py-2 fw-bold shadow-sm">
+                            <i class="bi bi-grid-fill me-2"></i>Nossas Ações
+                        </a>
+                        <a href="#notificacao" class="btn btn-outline-primary-dark rounded-pill px-4 py-2 fw-bold bg-white">
+                            <i class="bi bi-file-earmark-text me-2"></i>Notificar Agravo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-extrabold text-primary-dark mb-4">O que é a Vigilância em Saúde do Trabalhador?</h2>
+                    <p class="text-muted mb-3">
+                        A Vigilância em Saúde do Trabalhador (VISAT) tem como objetivo a promoção da saúde e a redução da morbimortalidade da população trabalhadora, por meio da integração entre vigilância epidemiológica, ambiental e sanitária.
+                    </p>
+                    <p class="text-muted mb-4">
+                        No Recife, a VISAT atua em parceria com o CEREST (Centro de Referência em Saúde do Trabalhador), desenvolvendo ações de vigilância, assistência e educação permanente para os profissionais da rede SUS.
+                    </p>
+                    <div class="d-flex align-items-center gap-3 p-3 rounded-3 bg-body-custom border">
+                        <div class="text-accent-orange">
+                            <i class="bi bi-geo-alt-fill fs-3"></i>
+                        </div>
+                        <div>
+                            <div class="fw-bold text-primary-dark small">CEREST Recife</div>
+                            <div class="text-muted small">Rua Padre Carapuceiro, 733 — Boa Viagem, Recife/PE</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-3 h-100 hover-elevate portal-card trab-card">
+                                <div class="text-accent-blue mb-2"><i class="bi bi-clipboard2-pulse fs-3"></i></div>
+                                <div class="fw-bold text-primary-dark small mb-1">Assistência</div>
+                                <div class="text-muted" style="font-size: 0.8rem;">Atendimento especializado a doenças e acidentes do trabalho</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-3 h-100 hover-elevate portal-card trab-card">
+                                <div class="text-accent-orange mb-2"><i class="bi bi-shield-exclamation fs-3"></i></div>
+                                <div class="fw-bold text-primary-dark small mb-1">Vigilância</div>
+                                <div class="text-muted" style="font-size: 0.8rem;">Monitoramento de agravos e ambientes de trabalho insalubres</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-3 h-100 hover-elevate portal-card trab-card">
+                                <div class="text-primary-light mb-2"><i class="bi bi-people fs-3"></i></div>
+                                <div class="fw-bold text-primary-dark small mb-1">Educação</div>
+                                <div class="text-muted" style="font-size: 0.8rem;">Capacitação de equipes da rede SUS em saúde ocupacional</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-3 h-100 hover-elevate portal-card trab-card">
+                                <div class="text-primary-dark mb-2"><i class="bi bi-graph-up fs-3"></i></div>
+                                <div class="fw-bold text-primary-dark small mb-1">Análise</div>
+                                <div class="text-muted" style="font-size: 0.8rem;">Análise epidemiológica de dados de saúde ocupacional</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="acoes" class="py-5 bg-body-custom">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-extrabold text-primary-dark display-6 mb-3">Principais Ações</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">Ações integradas desenvolvidas pela equipe de Saúde do Trabalhador da SEVS Recife.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 h-100 portal-card trab-card">
+                        <div class="card-body p-4">
+                            <div class="icon-wrapper mb-3 text-primary-dark bg-body-custom rounded-circle d-flex align-items-center justify-content-center" style="width: 52px; height: 52px;">
+                                <i class="bi bi-file-earmark-medical fs-4"></i>
+                            </div>
+                            <h5 class="fw-bold text-primary-dark mb-2">Notificação de Agravos</h5>
+                            <p class="text-muted small mb-0">Registro e acompanhamento de doenças e acidentes relacionados ao trabalho no SINAN e e-SUS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 h-100 portal-card trab-card">
+                        <div class="card-body p-4">
+                            <div class="icon-wrapper mb-3 text-primary-dark bg-body-custom rounded-circle d-flex align-items-center justify-content-center" style="width: 52px; height: 52px;">
+                                <i class="bi bi-building fs-4"></i>
+                            </div>
+                            <h5 class="fw-bold text-primary-dark mb-2">Inspeção de Ambientes</h5>
+                            <p class="text-muted small mb-0">Visitas de inspeção em ambientes de trabalho para identificação e controle de riscos à saúde dos trabalhadores.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 h-100 portal-card trab-card">
+                        <div class="card-body p-4">
+                            <div class="icon-wrapper mb-3 text-primary-dark bg-body-custom rounded-circle d-flex align-items-center justify-content-center" style="width: 52px; height: 52px;">
+                                <i class="bi bi-heart-pulse fs-4"></i>
+                            </div>
+                            <h5 class="fw-bold text-primary-dark mb-2">Atenção Especializada</h5>
+                            <p class="text-muted small mb-0">Atendimento multiprofissional no CEREST para trabalhadores com doenças ou lesões de origem laboral.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 h-100 portal-card trab-card">
+                        <div class="card-body p-4">
+                            <div class="icon-wrapper mb-3 text-primary-dark bg-body-custom rounded-circle d-flex align-items-center justify-content-center" style="width: 52px; height: 52px;">
+                                <i class="bi bi-broadcast fs-4"></i>
+                            </div>
+                            <h5 class="fw-bold text-primary-dark mb-2">Investigação Epidemiológica</h5>
+                            <p class="text-muted small mb-0">Investigação de surtos, acidentes graves e óbitos relacionados ao trabalho no município do Recife.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 h-100 portal-card trab-card">
+                        <div class="card-body p-4">
+                            <div class="icon-wrapper mb-3 text-primary-dark bg-body-custom rounded-circle d-flex align-items-center justify-content-center" style="width: 52px; height: 52px;">
+                                <i class="bi bi-mortarboard fs-4"></i>
+                            </div>
+                            <h5 class="fw-bold text-primary-dark mb-2">Educação Permanente</h5>
+                            <p class="text-muted small mb-0">Formação e capacitação de profissionais da rede de atenção básica e hospitalar sobre saúde ocupacional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 h-100 portal-card trab-card">
+                        <div class="card-body p-4">
+                            <div class="icon-wrapper mb-3 text-primary-dark bg-body-custom rounded-circle d-flex align-items-center justify-content-center" style="width: 52px; height: 52px;">
+                                <i class="bi bi-diagram-3 fs-4"></i>
+                            </div>
+                            <h5 class="fw-bold text-primary-dark mb-2">Articulação Intersetorial</h5>
+                            <p class="text-muted small mb-0">Integração com SESMT, sindicatos, Ministério do Trabalho e outras instâncias para proteção integral do trabalhador.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="notificacao" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="text-center mb-5">
+                        <div class="icon-wrapper mx-auto mb-4 text-accent-orange bg-body-custom rounded-circle d-flex align-items-center justify-content-center shadow-sm" style="width: 64px; height: 64px;">
+                            <i class="bi bi-file-earmark-plus fs-2"></i>
+                        </div>
+                        <h2 class="fw-extrabold text-primary-dark mb-3">Como Notificar um Agravo do Trabalho?</h2>
+                        <p class="text-muted mx-auto" style="max-width: 580px;">
+                            A notificação de doenças e acidentes relacionados ao trabalho é compulsória. O registro deve ser realizado pela unidade de saúde que presta o primeiro atendimento ao trabalhador.
+                        </p>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="d-flex gap-3 p-4 bg-body-custom rounded-4 border h-100">
+                                <div class="text-accent-orange flex-shrink-0 mt-1"><i class="bi bi-1-circle-fill fs-4"></i></div>
+                                <div>
+                                    <div class="fw-bold text-primary-dark mb-1">Identificar o Agravo</div>
+                                    <div class="text-muted small">Consulte a Lista de Doenças Relacionadas ao Trabalho (LDRT) e a Portaria GM/MS 5.201/2024 para confirmar a notificabilidade.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex gap-3 p-4 bg-body-custom rounded-4 border h-100">
+                                <div class="text-accent-orange flex-shrink-0 mt-1"><i class="bi bi-2-circle-fill fs-4"></i></div>
+                                <div>
+                                    <div class="fw-bold text-primary-dark mb-1">Preencher a Ficha SINAN</div>
+                                    <div class="text-muted small">Utilize a ficha de notificação do SINAN correspondente ao agravo identificado, com todos os campos obrigatórios.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex gap-3 p-4 bg-body-custom rounded-4 border h-100">
+                                <div class="text-accent-orange flex-shrink-0 mt-1"><i class="bi bi-3-circle-fill fs-4"></i></div>
+                                <div>
+                                    <div class="fw-bold text-primary-dark mb-1">Registrar no SINAN Online</div>
+                                    <div class="text-muted small">Digite a ficha no SINAN Online dentro do prazo estabelecido: até 7 dias para casos não urgentes e imediatamente para casos urgentes.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex gap-3 p-4 bg-body-custom rounded-4 border h-100">
+                                <div class="text-accent-orange flex-shrink-0 mt-1"><i class="bi bi-4-circle-fill fs-4"></i></div>
+                                <div>
+                                    <div class="fw-bold text-primary-dark mb-1">Encaminhar ao CEREST</div>
+                                    <div class="text-muted small">Em casos graves ou complexos, referencie o trabalhador ao CEREST Recife para acompanhamento especializado e investigação aprofundada.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <a href="../../wordpress/portarias/portarias.html" class="btn btn-accent-orange rounded-pill px-4 py-2 fw-bold shadow-sm me-2">
+                            <i class="bi bi-file-earmark-pdf me-2"></i>Ver Portarias Vigentes
+                        </a>
+                        <a href="../gesp/gesp.html" class="btn btn-outline-primary-dark rounded-pill px-4 py-2 fw-bold bg-white">
+                            <i class="bi bi-broadcast me-2"></i>Acessar GESP
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="publicacoes" class="py-5 bg-body-custom border-top">
+        <div class="container py-5">
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mb-5 text-center">
+                <div>
+                    <h3 class="fw-bold text-primary-dark mb-0">Informações Estratégicas</h3>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 portal-card trab-card">
+                        <div class="card-body p-4 text-center d-flex flex-column">
+                            <div class="mx-auto mb-3 text-primary-dark d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                <i class="bi bi-journal-medical" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h4 class="fw-bold text-primary-dark mb-2" style="font-size: 1.4rem;">Boletins</h4>
+                            <p class="text-muted small mb-4 flex-grow-1" style="font-size: 0.95rem;">Publicações periódicas e comunicados com diretrizes para a rede.</p>
+                            <a href="../../wordpress/boletins/boletim.html" class="btn btn-outline-primary-dark rounded-pill w-100 fw-medium" style="border-width: 1.5px; padding: 0.6rem 0;">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 portal-card trab-card">
+                        <div class="card-body p-4 text-center d-flex flex-column">
+                            <div class="mx-auto mb-3 text-primary-dark d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                <i class="bi bi-envelope-paper" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h4 class="fw-bold text-primary-dark mb-2" style="font-size: 1.4rem;">Informes</h4>
+                            <p class="text-muted small mb-4 flex-grow-1" style="font-size: 0.95rem;">Comunicados técnicos e orientações para a rede de saúde.</p>
+                            <a href="../../wordpress/informes/informe.html" class="btn btn-outline-primary-dark rounded-pill w-100 fw-medium" style="border-width: 1.5px; padding: 0.6rem 0;">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 portal-card trab-card">
+                        <div class="card-body p-4 text-center d-flex flex-column">
+                            <div class="mx-auto mb-3 text-primary-dark d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                <i class="bi bi-pie-chart" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h4 class="fw-bold text-primary-dark mb-2" style="font-size: 1.4rem;">Perfis</h4>
+                            <p class="text-muted small mb-4 flex-grow-1" style="font-size: 0.95rem;">Análise detalhada de morbimortalidade local.</p>
+                            <a href="../../wordpress/perfis/perfis.html" class="btn btn-outline-primary-dark rounded-pill w-100 fw-medium" style="border-width: 1.5px; padding: 0.6rem 0;">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 border-0 rounded-4 shadow-sm hover-elevate bg-white p-2 portal-card trab-card">
+                        <div class="card-body p-4 text-center d-flex flex-column">
+                            <div class="mx-auto mb-3 text-primary-dark d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                <i class="bi bi-journal-bookmark" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h4 class="fw-bold text-primary-dark mb-2" style="font-size: 1.4rem;">Materiais Educativos</h4>
+                            <p class="text-muted small mb-4 flex-grow-1" style="font-size: 0.95rem;">Guias, cartilhas e materiais de apoio para as equipes.</p>
+                            <a href="../../wordpress/Materiais/materiais.html" class="btn btn-outline-primary-dark rounded-pill w-100 fw-medium" style="border-width: 1.5px; padding: 0.6rem 0;">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="sevs-footer" data-root="../../" data-title="Saúde do Trabalhador — SEVS Recife" data-description="Parte integrante do Portal da Secretaria Executiva de Vigilância em Saúde (SEVS) do Recife. Ações de vigilância e atenção à saúde dos trabalhadores do município."></div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="trabalhador.js"></script>
+    <script src="../../servicos/servicos.js"></script>
+    <script src="../../footer/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformação Digital - SEVS Recife</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../../style-portal.css">
+    <link rel="stylesheet" href="../../footer/footer.css">
+</head>
+<body class="min-vh-100 d-flex flex-column">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top transition-nav shadow-sm" aria-label="Navegação principal">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio" aria-label="Página Inicial do Núcleo de Transformação Digital">
+                <img src="https://placehold.co/150x50/eeeeee/333333?text=Logo+Recife" alt="Prefeitura do Recife" class="me-2 h-auto" style="max-height: 40px;">
+                <div class="d-none d-sm-block border-start ps-2 ms-2" style="border-color: #ddd !important;">
+                    <h1 class="h6 mb-0 fw-bold text-primary-dark">NTD</h1>
+                    <span class="d-block text-muted" style="font-size: 0.7rem;">SEVS Recife</span>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-2">
+                    <li class="nav-item"><a class="nav-link fw-medium text-primary-dark" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium text-primary-dark" href="#sobre">O Núcleo</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium text-primary-dark" href="#atividades">Principais Atividades</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero-section text-center text-lg-start d-flex align-items-center position-relative overflow-hidden bg-body-custom border-bottom">
+        <div class="hero-bg-pattern-nucleo"></div>
+        <div class="container position-relative z-index-1 py-5">
+            <div class="row align-items-center g-5">
+                <div id="atividades" class="col-lg-7">
+                    <h2 class="display-5 fw-extrabold text-primary-dark mb-3 lh-sm">Núcleo de Transformação Digital</h2>
+                    <p class="lead text-muted mb-0 pe-lg-5">
+                        Inovação, digitalização de processos e sistemas para a vigilância em saúde do Recife.
+                    </p>
+                </div>
+                <div class="col-lg-5 position-relative d-none d-lg-block">
+                    <div class="hero-image-frame p-3 bg-white shadow-lg rounded-4">
+                        <img src="https://placehold.co/500x400/eeeeee/666666?text=Transforma%C3%A7%C3%A3o+Digital" alt="Soluções digitais da vigilância em saúde" class="img-fluid rounded-3">
+                    </div>
+                    <div class="hero-accent-shape-nucleo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 align-self-start">
+                    <h3 class="fw-bold mb-4 text-primary-dark display-6">O Núcleo</h3>
+                    <p class="text-muted fs-6 mb-3" style="text-align: justify; hyphens: auto; -webkit-hyphens: auto; -ms-hyphens: auto;">
+                        O Núcleo de Transformação Digital (NTD) desenvolve e mantém as soluções digitais da SEVS, incluindo o Portal SEVS, os formulários eletrônicos de notificação e os painéis de dados da secretaria.
+                    </p>
+                    <p class="text-muted fs-6 mb-0" style="text-align: justify; hyphens: auto; -webkit-hyphens: auto; -ms-hyphens: auto;">
+                        O núcleo atua na digitalização de processos, na capacitação de servidores para o uso de ferramentas digitais e na manutenção do catálogo de sistemas utilizados pela vigilância em saúde do Recife.
+                    </p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="mb-4">
+                        <h4 class="fw-bold text-primary-dark mb-2">Principais atividades</h4>
+                        <p class="text-muted">As frentes de atuação do núcleo junto à vigilância em saúde do Recife:</p>
+                    </div>
+                    <div id="lista-atividades" class="row g-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="sevs-footer" data-root="../../" data-links="portal,gesp,portarias,notificacao,carta,prefeitura,sesau" data-title="Secretaria Executiva de Vigilância em Saúde" data-description="Núcleo de Transformação Digital"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="transformacao-digital.js"></script>
+    <script src="../../script-portal.js"></script>
+    <script src="../../footer/footer.js"></script>
+</body>
+</html>
