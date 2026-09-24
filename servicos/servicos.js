@@ -38,6 +38,11 @@
         var templateColumn = cardsRow && cardsRow.lastElementChild;
 
         if (templateColumn) {
+            Array.prototype.forEach.call(cardsRow.children, function (column) {
+                column.classList.remove('col-md-3');
+                column.classList.add('col-lg-4');
+            });
+
             strategicCards.forEach(function (card) {
                 if (cardsRow.querySelector('[data-strategic-card="' + card.id + '"]')) {
                     return;
