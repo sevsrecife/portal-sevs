@@ -30,11 +30,15 @@ git status --short --branch
 echo "==> Atualizando branch $BRANCH"
 git pull --ff-only origin "$BRANCH"
 
-echo "==> Adicionando alterações"
-git add .
-
-echo "==> Commitando alterações"
-git commit -m "$COMMIT_MSG"
+if [[ -n "$(git status --porcelain)" ]]; then
+  echo "==> Adicionando alterações"
+  git add .
+  echo "==> Commitando alterações"
+  git commit -m "$COMMIT_MSG"
+else
+  echo "==> Nenhuma alteração pendente para commit."
+  echo "==> Verificando se há commits locais para enviar."
+fi
 
 echo "==> Enviando para origin/$BRANCH"
 git push origin "$BRANCH"
