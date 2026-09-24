@@ -1,0 +1,35 @@
+[
+    {
+        "titulo": "Capacitação SINAN — Módulo Iniciante",
+        "data": "2026-10-07",
+        "horario": "08h às 12h",
+        "local": "Auditório da SEVS Recife",
+        "publicoAlvo": "Profissionais da rede de vigilância em saúde",
+        "descricao": "Formação para profissionais recém-inseridos na rede, com foco no registro de agravos de notificação compulsória.",
+        "modalidade": "Presencial",
+        "status": "Inscrições abertas",
+        "inscricao": "https://forms.google.com/"
+    },
+    {
+        "titulo": "Oficina de Investigação Epidemiológica de Surtos",
+        "data": "2026-10-21",
+        "horario": "14h às 17h",
+        "local": "Sede da SEVS Recife",
+        "publicoAlvo": "Equipes de vigilância epidemiológica e atenção básica",
+        "descricao": "Atividade prática com exercício simulado de resposta a surto de doença de causa desconhecida.",
+        "modalidade": "Presencial",
+        "status": "Agendada",
+        "inscricao": ""
+    },
+    {
+        "titulo": "Ciclo de Palestras: Vigilância da Qualidade da Água",
+        "data": "2026-11-04",
+        "horario": "09h às 11h",
+        "local": "Transmissão online e LACEN Recife",
+        "publicoAlvo": "Profissionais da Vigilância Ambiental e do LACEN",
+        "descricao": "Encontro sobre o programa VIGIAGUA e os principais parâmetros de análise de potabilidade.",
+        "modalidade": "Híbrida",
+        "status": "Agendada",
+        "inscricao": ""
+    }
+]

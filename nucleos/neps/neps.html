@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="neps.css">
     <link rel="stylesheet" href="../../footer/footer.css">
+        <link rel="stylesheet" href="../../wordpress/agendas/agenda.css">
     
 </head>
 <body class="bg-body-custom min-vh-100 d-flex flex-column">
@@ -206,12 +207,14 @@
                         <div class="icon-wrapper mx-auto mb-4 text-accent-orange bg-body-custom rounded-circle d-flex align-items-center justify-content-center shadow-sm" style="width: 64px; height: 64px;">
                             <i class="bi bi-calendar-check fs-2"></i>
                         </div>
-                        <h2 class="fw-extrabold text-primary-dark mb-3">Agenda de Formações</h2>
+                        <h2 id="agenda-titulo" class="fw-extrabold text-primary-dark mb-3">Agenda de Formações</h2>
                         <p class="text-muted mx-auto" style="max-width: 580px;">
                             Confira as próximas capacitações e eventos educativos promovidos pelo NEPS em parceria com as gerências da SEVS. As inscrições são divulgadas por meio de informe técnico à rede.
                         </p>
                     </div>
-                    <div class="row g-3" id="lista-agenda" aria-live="polite"></div>
+                        <div class="row g-3" id="lista-agenda" aria-labelledby="agenda-titulo" aria-live="polite" aria-busy="true">
+                            <div class="col-12 text-center py-4 text-muted">Carregando agenda...</div>
+                        </div>
 
                     <div id="agenda-vazia" class="text-center py-4 d-none">
                         <i class="bi bi-calendar-x text-muted" style="font-size: 2.5rem;"></i>
@@ -221,15 +224,6 @@
                     <div id="agenda-erro" class="text-center py-4 d-none">
                         <i class="bi bi-exclamation-circle text-muted" style="font-size: 2.5rem;"></i>
                         <p class="text-muted mt-3 mb-0">Não foi possível carregar a agenda. Tente novamente mais tarde.</p>
-                    </div>
-
-                    <div class="text-center mt-5">
-                        <a href="../../wordpress/plenarias/plenarias.html" class="btn btn-accent-orange rounded-pill px-4 py-2 fw-bold shadow-sm me-2">
-                            <i class="bi bi-camera-video me-2"></i>Ver Plenárias GESP
-                        </a>
-                        <a href="../../gerencias/gesp/gesp.html" class="btn btn-outline-primary-dark rounded-pill px-4 py-2 fw-bold bg-white">
-                            <i class="bi bi-broadcast me-2"></i>Acessar GESP
-                        </a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,67 @@
+/* ========================================================================
+   Agenda de Formacoes - estilos especificos do modulo
+   ======================================================================== */
+
+.agenda-item {
+    border-color: #e8edf3 !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.agenda-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(18, 52, 107, 0.08);
+}
+
+.agenda-date {
+    min-width: 84px;
+}
+
+.agenda-date-day {
+    display: block;
+    color: var(--accent-orange);
+    font-size: 1.4rem;
+    line-height: 1.1;
+}
+
+.agenda-date-month {
+    display: block;
+    color: #6c757d;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.agenda-meta {
+    line-height: 1.5;
+}
+
+.agenda-meta-item {
+    display: inline-flex;
+    align-items: flex-start;
+}
+
+.agenda-meta-item i {
+    color: var(--primary-light);
+    margin-top: 0.15rem;
+}
+
+.agenda-status {
+    background-color: rgba(30, 115, 190, 0.12);
+    color: var(--primary-light);
+}
+
+@media (max-width: 575.98px) {
+    .agenda-item {
+        padding: 1.25rem !important;
+    }
+
+    .agenda-date {
+        align-self: flex-start;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .agenda-item {
+        transition: none;
+    }
+}
