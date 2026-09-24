@@ -5,7 +5,7 @@
         {
             id: 'services',
             icon: 'bi bi-grid',
-            title: 'Serviços',
+            title: 'Carta de Serviços',
             description: 'Consulte os serviços disponíveis no portal Conecta Recife.',
             url: 'https://conecta.recife.pe.gov.br/buscaavancada?b=&c=14&g=&o=&f=&l=&t='
         },
@@ -17,17 +17,15 @@
             url: 'https://vigilanciaemsaude.recife.pe.gov.br/cie/public.html#paineis',
             label: 'Acessar Observatório',
             external: true
-        }
-    ].concat((window.MODELOS_NOTICIAS || []).map(function (noticia, index) {
-        return {
-            id: 'news-' + index,
+        },
+        {
+            id: 'news',
             icon: 'bi bi-newspaper',
-            title: noticia.titulo,
-            description: noticia.resumo,
-            url: '../../wordpress/notícias/noticias.html',
-            label: 'Acessar notícia'
-        };
-    }));
+            title: 'Notícias',
+            description: 'Acompanhe informações, ações e atualizações da Vigilância em Saúde do Recife.',
+            url: '../../wordpress/notícias/noticias.html'
+        }
+    ];
     var strategicInformationHeading = Array.prototype.find.call(
         document.querySelectorAll('section h3'),
         function (heading) {

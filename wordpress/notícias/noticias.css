@@ -98,8 +98,7 @@ body {
     font-size: 4rem;
 }
 
-.news-category,
-.news-model-label {
+.news-category {
     display: inline-flex;
     align-items: center;
     min-height: 26px;
@@ -113,11 +112,6 @@ body {
 .news-category {
     background-color: rgba(219, 64, 10, 0.1);
     color: var(--accent-orange);
-}
-
-.news-model-label {
-    background-color: #eef1f4;
-    color: #66717d;
 }
 
 .news-meta {
@@ -144,14 +138,21 @@ body {
     font-size: 0.92rem;
 }
 
+.news-image-element {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-status .bi-newspaper {
+    color: var(--primary-light);
+    font-size: 2.5rem;
+}
+
 .news-link {
     color: var(--primary-dark);
     font-weight: 700;
     text-decoration: none;
-}
-
-.news-link[aria-disabled="true"] {
-    cursor: default;
 }
 
 @media (max-width: 575.98px) {

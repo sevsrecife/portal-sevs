@@ -24,7 +24,6 @@
                     <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="#" onclick="window.history.back(); return false;"><i class="bi bi-arrow-left me-1"></i>Voltar</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="../boletins/boletim.html"><i class="bi bi-journal-medical me-1"></i>Boletins</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="../informes/informe.html"><i class="bi bi-envelope-paper me-1"></i>Informes</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="../perfis/perfis.html"><i class="bi bi-person-vcard me-1"></i>Perfis</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold text-primary-dark" href="../Materiais/materiais.html"><i class="bi bi-journal-bookmark me-1"></i>Materiais</a></li>
                 </ul>
             </div>
@@ -50,39 +49,53 @@
         <section class="container py-5" aria-labelledby="ultimas-noticias">
             <div class="mb-4">
                 <span class="section-label">INFORME-SE</span>
-                <h2 id="ultimas-noticias" class="h3 fw-bold text-primary-dark mt-2 mb-1">Modelos de notícias</h2>
-                <p class="text-muted mb-0">Estruturas demonstrativas prontas para receber as publicações oficiais.</p>
+                <h2 id="ultimas-noticias" class="h3 fw-bold text-primary-dark mt-2 mb-1">Últimas notícias</h2>
+                <p class="text-muted mb-0">Publicações oficiais da Vigilância em Saúde do Recife.</p>
             </div>
 
-            <article class="featured-news bg-white border shadow-sm overflow-hidden mb-4">
+            <div id="noticias-carregando" class="news-status text-center py-5" role="status" aria-live="polite">
+                <div class="spinner-border text-primary-dark mb-3" aria-hidden="true"></div>
+                <p class="text-muted mb-0">Carregando notícias...</p>
+            </div>
+
+            <div id="noticias-erro" class="alert alert-warning d-none" role="alert">
+                <p class="mb-3">Não foi possível carregar as notícias agora.</p>
+                <button id="tentar-novamente" class="btn btn-outline-primary-dark btn-sm fw-semibold" type="button">Tentar novamente</button>
+            </div>
+
+            <div id="noticias-vazio" class="news-status text-center py-5 d-none" role="status">
+                <i class="bi bi-newspaper d-block mb-3" aria-hidden="true"></i>
+                <p class="text-muted mb-0">Nenhuma notícia publicada no momento.</p>
+            </div>
+
+            <article id="noticia-destaque" class="featured-news bg-white border shadow-sm overflow-hidden mb-4 d-none">
                 <div class="row g-0">
                     <div class="col-lg-7">
-                        <div class="news-image news-image-featured d-flex align-items-center justify-content-center" role="img" aria-label="Espaço reservado para a imagem da notícia em destaque">
-                            <i class="bi bi-image" aria-hidden="true"></i>
-                        </div>
+                        <div id="destaque-imagem" class="news-image news-image-featured d-flex align-items-center justify-content-center"></div>
                     </div>
                     <div class="col-lg-5">
                         <div class="p-4 p-xl-5 h-100 d-flex flex-column justify-content-center">
-                            <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
-                                <span class="news-category">DESTAQUE</span>
-                                <span class="news-model-label">CONTEÚDO MODELO</span>
-                            </div>
-                            <h3 class="h2 fw-bold text-primary-dark">Título principal da notícia em destaque</h3>
-                            <p class="text-muted">Use este espaço para apresentar o resumo da publicação com as informações essenciais para o leitor.</p>
-                            <div class="news-meta mb-4"><i class="bi bi-calendar3 me-2"></i>DD/MM/AAAA</div>
-                            <button class="btn btn-primary-dark fw-semibold align-self-start" type="button" disabled>Leia a notícia</button>
+                            <span id="destaque-categoria" class="news-category align-self-start mb-3"></span>
+                            <h3 id="destaque-titulo" class="h2 fw-bold text-primary-dark"></h3>
+                            <p id="destaque-resumo" class="text-muted"></p>
+                            <div id="destaque-data" class="news-meta mb-4"></div>
+                            <a id="destaque-link" class="btn btn-primary-dark fw-semibold align-self-start" target="_blank" rel="noopener noreferrer">Leia a notícia</a>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <div class="row g-4" id="lista-noticias" aria-label="Modelos de notícias"></div>
+            <div class="row g-4" id="lista-noticias" aria-label="Notícias publicadas"></div>
 
-            <div class="text-center mt-5">
-                <button id="carregar-mais" class="btn btn-outline-primary-dark fw-semibold" type="button">
-                    <i class="bi bi-plus-lg me-2"></i>Carregar mais
+            <nav id="paginacao-noticias" class="d-none justify-content-center align-items-center gap-3 mt-5" aria-label="Paginação de notícias">
+                <button id="pagina-anterior" class="btn btn-outline-primary-dark fw-semibold" type="button">
+                    <i class="bi bi-arrow-left me-2" aria-hidden="true"></i>Anterior
                 </button>
-            </div>
+                <span id="pagina-atual" class="text-muted fw-semibold" aria-live="polite"></span>
+                <button id="proxima-pagina" class="btn btn-outline-primary-dark fw-semibold" type="button">
+                    Próxima<i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                </button>
+            </nav>
         </section>
     </main>
 
