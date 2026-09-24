@@ -1,0 +1,284 @@
+.nucleo-planejamento {
+    --nucleo-bg: #edf5fb;
+    --nucleo-surface: #ffffff;
+    --nucleo-surface-strong: #eaf3fe;
+    --nucleo-ink: #12346b;
+    --nucleo-ink-soft: #446287;
+    --nucleo-accent: #1e73be;
+    --nucleo-accent-strong: #12346b;
+    --nucleo-highlight: #db400a;
+    --nucleo-line: rgba(18, 52, 107, 0.12);
+    --nucleo-shadow: rgba(18, 52, 107, 0.12);
+}
+
+.nucleo-planejamento .hero-section {
+    background: linear-gradient(135deg, rgba(18, 52, 107, 0.04), rgba(30, 115, 190, 0.1));
+    min-height: 78vh;
+}
+
+.nucleo-planejamento .hero-section .hero-bg-pattern-nucleo {
+    background-image: linear-gradient(rgba(30, 115, 190, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(30, 115, 190, 0.06) 1px, transparent 1px);
+    background-size: 34px 34px;
+    opacity: 0.9;
+}
+
+.nucleo-planejamento .hero-copy {
+    position: relative;
+    z-index: 1;
+}
+
+.nucleo-planejamento .eyebrow,
+.nucleo-planejamento .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(30, 115, 190, 0.08);
+    color: var(--nucleo-ink);
+    border: 1px solid rgba(30, 115, 190, 0.12);
+}
+
+.nucleo-planejamento .eyebrow::before,
+.nucleo-planejamento .section-label::before {
+    content: "";
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    background: var(--nucleo-highlight);
+    box-shadow: 0 0 0 5px rgba(219, 64, 10, 0.12);
+}
+
+.nucleo-planejamento .hero-actions .btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nucleo-planejamento .hero-actions .btn:hover {
+    transform: translateY(-2px);
+}
+
+.nucleo-planejamento .hero-dashboard {
+    position: relative;
+    max-width: 430px;
+    margin-left: auto;
+    padding: 1.25rem;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(18, 52, 107, 0.08);
+    border-radius: 28px;
+    box-shadow: 0 28px 50px var(--nucleo-shadow);
+    backdrop-filter: blur(8px);
+}
+
+.nucleo-planejamento .hero-dashboard::before {
+    content: "";
+    position: absolute;
+    inset: 1.25rem auto auto 1.5rem;
+    width: 62%;
+    height: 60%;
+    background: radial-gradient(circle at 30% 30%, rgba(30, 115, 190, 0.18), transparent 60%);
+    pointer-events: none;
+}
+
+.nucleo-planejamento .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.nucleo-planejamento .dashboard-badge {
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(30, 115, 190, 0.1);
+    color: var(--nucleo-ink);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.nucleo-planejamento .dashboard-period {
+    color: var(--nucleo-ink-soft);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.nucleo-planejamento .dashboard-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.nucleo-planejamento .dashboard-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 134px;
+    padding: 1rem;
+    border-radius: 18px;
+    border: 1px solid rgba(18, 52, 107, 0.07);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.nucleo-planejamento .dashboard-card.primary {
+    background: linear-gradient(180deg, rgba(30, 115, 190, 0.11), rgba(255, 255, 255, 0.85));
+}
+
+.nucleo-planejamento .dashboard-card.accent {
+    background: linear-gradient(180deg, rgba(219, 64, 10, 0.08), rgba(255, 255, 255, 0.9));
+}
+
+.nucleo-planejamento .dashboard-card.wide {
+    grid-column: 1 / -1;
+    min-height: 110px;
+}
+
+.nucleo-planejamento .dashboard-card.neutral {
+    background: linear-gradient(180deg, rgba(18, 52, 107, 0.06), rgba(255, 255, 255, 0.9));
+}
+
+.nucleo-planejamento .dashboard-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    color: var(--nucleo-ink-soft);
+}
+
+.nucleo-planejamento .dashboard-card strong {
+    font-size: clamp(1.5rem, 2vw, 2.2rem);
+    line-height: 1;
+    color: var(--nucleo-ink);
+
+}
+
+.nucleo-planejamento .dashboard-card small {
+    color: var(--nucleo-ink-soft);
+    font-weight: 600;
+}
+
+.nucleo-planejamento .progress-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0.5rem 0 0.35rem;
+}
+
+.nucleo-planejamento .progress-bar {
+    position: relative;
+    width: 100%;
+    height: 0.75rem;
+    border-radius: 999px;
+    background: rgba(18, 52, 107, 0.08);
+    overflow: hidden;
+}
+
+.nucleo-planejamento .progress-bar span {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 87%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--nucleo-accent), var(--nucleo-highlight));
+}
+
+.nucleo-planejamento .nucleo-overview {
+    background: var(--nucleo-surface);
+}
+
+.nucleo-planejamento .overview-copy {
+    position: relative;
+}
+
+.nucleo-planejamento .planning-roadmap {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.nucleo-planejamento .roadmap-column {
+    position: relative;
+    display: grid;
+    gap: 0.8rem;
+    padding: 1.2rem;
+    border-radius: 22px;
+    border: 1px solid var(--nucleo-line);
+    background: linear-gradient(180deg, rgba(30, 115, 190, 0.04), rgba(255,255,255,0.9));
+}
+
+.nucleo-planejamento .roadmap-column::before {
+    content: "";
+    position: absolute;
+    inset: 1rem 1rem auto auto;
+    width: 55%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(219, 64, 10, 0.2), transparent);
+}
+
+.nucleo-planejamento .roadmap-column.accent {
+    background: linear-gradient(180deg, rgba(219, 64, 10, 0.04), rgba(255,255,255,0.9));
+}
+
+.nucleo-planejamento .roadmap-column span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0.95rem;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.85);
+    border: 1px solid rgba(18, 52, 107, 0.06);
+    color: var(--nucleo-ink);
+    font-weight: 700;
+}
+
+.nucleo-planejamento .roadmap-column span::after {
+    content: "→";
+    color: var(--nucleo-highlight);
+    font-weight: 800;
+}
+
+.nucleo-planejamento .activities-header {
+    margin-top: 1.25rem;
+}
+
+.nucleo-planejamento .activity-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(239, 246, 255, 0.9));
+    border: 1px solid rgba(18, 52, 107, 0.08);
+    border-top: 4px solid var(--nucleo-accent) !important;
+    box-shadow: 0 12px 24px rgba(18, 52, 107, 0.05);
+}
+
+.nucleo-planejamento .activity-card:hover {
+    box-shadow: 0 18px 36px rgba(18, 52, 107, 0.08);
+}
+
+.nucleo-planejamento .activity-icon {
+    background: rgba(30, 115, 190, 0.1);
+    color: var(--nucleo-ink);
+}
+
+@media (max-width: 991.98px) {
+    .nucleo-planejamento .hero-section {
+        min-height: auto;
+        padding-top: 5rem;
+    }
+
+    .nucleo-planejamento .hero-dashboard {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .nucleo-planejamento .dashboard-grid,
+    .nucleo-planejamento .planning-roadmap {
+        grid-template-columns: 1fr;
+    }
+}

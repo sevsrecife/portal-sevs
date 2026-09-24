@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="../../style-portal.css">
+    <link rel="stylesheet" href="transformacao-digital.css">
     <link rel="stylesheet" href="../../footer/footer.css">
 </head>
-<body class="min-vh-100 d-flex flex-column">
+<body class="nucleo-digital min-vh-100 d-flex flex-column">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top transition-nav shadow-sm" aria-label="Navegação principal">
         <div class="container">
@@ -38,31 +39,45 @@
         </div>
     </nav>
 
-    <section id="inicio" class="hero-section text-center text-lg-start d-flex align-items-center position-relative overflow-hidden bg-body-custom border-bottom">
+    <section id="inicio" class="hero-section text-center text-lg-start d-flex align-items-center position-relative overflow-hidden border-bottom">
         <div class="hero-bg-pattern-nucleo"></div>
         <div class="container position-relative z-index-1 py-5">
             <div class="row align-items-center g-5">
-                <div id="atividades" class="col-lg-7">
+                <div id="atividades" class="col-lg-7 hero-copy">
+                    <span class="eyebrow">Tecnologia • Integração • Inovação</span>
                     <h2 class="display-5 fw-extrabold text-primary-dark mb-3 lh-sm">Núcleo de Transformação Digital</h2>
-                    <p class="lead text-muted mb-0 pe-lg-5">
+                    <p class="lead text-muted mb-4 pe-lg-5">
                         Inovação, digitalização de processos e sistemas para a vigilância em saúde do Recife.
                     </p>
-                </div>
-                <div class="col-lg-5 position-relative d-none d-lg-block">
-                    <div class="hero-image-frame p-3 bg-white shadow-lg rounded-4">
-                        <img src="https://placehold.co/500x400/eeeeee/666666?text=Transforma%C3%A7%C3%A3o+Digital" alt="Soluções digitais da vigilância em saúde" class="img-fluid rounded-3">
+                    <div class="hero-actions d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#sobre" class="btn btn-primary-dark rounded-pill px-4 py-2 fw-semibold">Conhecer o núcleo</a>
+                        <a href="#lista-atividades" class="btn btn-outline-primary-dark rounded-pill px-4 py-2 fw-semibold">Atividades</a>
                     </div>
-                    <div class="hero-accent-shape-nucleo"></div>
+                </div>
+                <div class="col-lg-5 position-relative">
+                    <div class="digital-visual" aria-label="Estrutura de sistemas conectados">
+                        <div class="signal signal-a"></div>
+                        <div class="signal signal-b"></div>
+                        <div class="signal signal-c"></div>
+                        <div class="node node-main">
+                            <span>SEVS</span>
+                        </div>
+                        <div class="node node-small node-one">Portal</div>
+                        <div class="node node-small node-two">Dados</div>
+                        <div class="node node-small node-three">Processos</div>
+                        <div class="node node-small node-four">Usuários</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="sobre" class="py-5 bg-white">
+    <section id="sobre" class="nucleo-overview py-5">
         <div class="container py-5">
             <div class="row align-items-center g-5">
-                <div class="col-lg-5 align-self-start">
-                    <h3 class="fw-bold mb-4 text-primary-dark display-6">O Núcleo</h3>
+                <div class="col-lg-5 align-self-start overview-copy">
+                    <div class="section-label">O Núcleo</div>
+                    <h3 class="fw-bold mb-4 text-primary-dark display-6">Sistemas, dados e experiência digital</h3>
                     <p class="text-muted fs-6 mb-3" style="text-align: justify; hyphens: auto; -webkit-hyphens: auto; -ms-hyphens: auto;">
                         O Núcleo de Transformação Digital (NTD) desenvolve e mantém as soluções digitais da SEVS, incluindo o Portal SEVS, os formulários eletrônicos de notificação e os painéis de dados da secretaria.
                     </p>
@@ -71,9 +86,18 @@
                     </p>
                 </div>
                 <div class="col-lg-7">
-                    <div class="mb-4">
+                    <div class="digital-flow" aria-label="Fluxo digital institucional">
+                        <div class="flow-card"><span>Sistemas</span></div>
+                        <div class="flow-arrow"></div>
+                        <div class="flow-card"><span>Integração</span></div>
+                        <div class="flow-arrow"></div>
+                        <div class="flow-card"><span>Processos</span></div>
+                        <div class="flow-arrow"></div>
+                        <div class="flow-card"><span>Usuários</span></div>
+                    </div>
+                    <div class="mb-4 activities-header">
                         <h4 class="fw-bold text-primary-dark mb-2">Principais atividades</h4>
-                        <p class="text-muted">As frentes de atuação do núcleo junto à vigilância em saúde do Recife:</p>
+                        <p class="text-muted mb-0">As frentes de atuação do núcleo junto à vigilância em saúde do Recife:</p>
                     </div>
                     <div id="lista-atividades" class="row g-4"></div>
                 </div>

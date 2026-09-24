@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="../../style-portal.css">
+    <link rel="stylesheet" href="planejamento.css">
     <link rel="stylesheet" href="../../footer/footer.css">
 </head>
-<body class="min-vh-100 d-flex flex-column">
+<body class="nucleo-planejamento min-vh-100 d-flex flex-column">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top transition-nav shadow-sm" aria-label="Navegação principal">
         <div class="container">
@@ -38,31 +39,63 @@
         </div>
     </nav>
 
-    <section id="inicio" class="hero-section text-center text-lg-start d-flex align-items-center position-relative overflow-hidden bg-body-custom border-bottom">
+    <section id="inicio" class="hero-section text-center text-lg-start d-flex align-items-center position-relative overflow-hidden border-bottom">
         <div class="hero-bg-pattern-nucleo"></div>
         <div class="container position-relative z-index-1 py-5">
             <div class="row align-items-center g-5">
-                <div id="atividades" class="col-lg-7">
+                <div id="atividades" class="col-lg-7 hero-copy">
+                    <span class="eyebrow">Estratégia • Indicadores • Acompanhamento</span>
                     <h2 class="display-5 fw-extrabold text-primary-dark mb-3 lh-sm">Núcleo de Planejamento e Monitoramento</h2>
-                    <p class="lead text-muted mb-0 pe-lg-5">
+                    <p class="lead text-muted mb-4 pe-lg-5">
                         Planejamento estratégico, monitoramento de indicadores e avaliação das ações de vigilância em saúde do Recife.
                     </p>
-                </div>
-                <div class="col-lg-5 position-relative d-none d-lg-block">
-                    <div class="hero-image-frame p-3 bg-white shadow-lg rounded-4">
-                        <img src="https://placehold.co/500x400/eeeeee/666666?text=Planejamento+e+Monitoramento" alt="Painel de indicadores da vigilância em saúde" class="img-fluid rounded-3">
+                    <div class="hero-actions d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#sobre" class="btn btn-primary-dark rounded-pill px-4 py-2 fw-semibold">Conhecer o núcleo</a>
+                        <a href="#lista-atividades" class="btn btn-outline-primary-dark rounded-pill px-4 py-2 fw-semibold">Atividades</a>
                     </div>
-                    <div class="hero-accent-shape-nucleo"></div>
+                </div>
+                <div class="col-lg-5 position-relative">
+                    <div class="hero-dashboard" aria-label="Painel analítico do núcleo">
+                        <div class="dashboard-header">
+                            <span class="dashboard-badge">Acompanhamento</span>
+                            <span class="dashboard-period">2026</span>
+                        </div>
+                        <div class="dashboard-grid">
+                            <div class="dashboard-card primary">
+                                <span class="dashboard-label">Metas</span>
+                                <strong>18</strong>
+                                <small>pactuadas</small>
+                            </div>
+                            <div class="dashboard-card accent">
+                                <span class="dashboard-label">Indicadores</span>
+                                <strong>42</strong>
+                                <small>em painel</small>
+                            </div>
+                            <div class="dashboard-card wide">
+                                <span class="dashboard-label">Cobertura</span>
+                                <div class="progress-row">
+                                    <div class="progress-bar"><span></span></div>
+                                </div>
+                                <small>87% de execução</small>
+                            </div>
+                            <div class="dashboard-card neutral">
+                                <span class="dashboard-label">Avaliação</span>
+                                <strong>4 ciclos</strong>
+                                <small>trimestrais</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="sobre" class="py-5 bg-white">
+    <section id="sobre" class="nucleo-overview py-5">
         <div class="container py-5">
             <div class="row align-items-center g-5">
-                <div class="col-lg-5 align-self-start">
-                    <h3 class="fw-bold mb-4 text-primary-dark display-6">O Núcleo</h3>
+                <div class="col-lg-5 align-self-start overview-copy">
+                    <div class="section-label">O Núcleo</div>
+                    <h3 class="fw-bold mb-4 text-primary-dark display-6">Planejamento orientado por dados e metas</h3>
                     <p class="text-muted fs-6 mb-3" style="text-align: justify; hyphens: auto; -webkit-hyphens: auto; -ms-hyphens: auto;">
                         O Núcleo de Planejamento e Monitoramento conduz os processos de planejamento estratégico da SEVS, da elaboração do Plano Municipal de Vigilância em Saúde à pactuação de metas junto às gerências.
                     </p>
@@ -71,9 +104,21 @@
                     </p>
                 </div>
                 <div class="col-lg-7">
-                    <div class="mb-4">
+                    <div class="planning-roadmap" aria-label="Fluxo de planejamento institucional">
+                        <div class="roadmap-column">
+                            <span>Diagnóstico</span>
+                            <span>Dados</span>
+                            <span>Metas</span>
+                        </div>
+                        <div class="roadmap-column accent">
+                            <span>Execução</span>
+                            <span>Monitoramento</span>
+                            <span>Avaliação</span>
+                        </div>
+                    </div>
+                    <div class="mb-4 activities-header">
                         <h4 class="fw-bold text-primary-dark mb-2">Principais atividades</h4>
-                        <p class="text-muted">As frentes de atuação do núcleo junto à vigilância em saúde do Recife:</p>
+                        <p class="text-muted mb-0">As frentes de atuação do núcleo junto à vigilância em saúde do Recife:</p>
                     </div>
                     <div id="lista-atividades" class="row g-4"></div>
                 </div>
